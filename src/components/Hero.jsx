@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from './Navbar';
+
 import image from '../assets/Frame 567.svg'
 import image2 from '../assets/Frame 461.svg';
-import gsap from 'gsap';
-import { useEffect, useRef } from 'react';
+// import gsap from 'gsap';
+// import { useEffect, useRef } from 'react';
 import image3 from '../assets/Component 41 (1).svg';
 import image4 from '../assets/pexels-anh-khac-6318739 1.png';
 import image5 from '../assets/pexels-deva-darshan-1173777 1.png';
@@ -22,28 +22,28 @@ import service from '../assets/glass (2).png';
 
 const Hero = () => {
 
-    const HoverEffectExample = () => {
-        const containerRef = useRef(null);
-          const onMouseEnter = () => {
+    // const HoverEffectExample = () => {
+    //     const containerRef = useRef(null);
+    //       const onMouseEnter = () => {
 
-            gsap.to(containerRef.current, {
-              backgroundColor: 'blue', // Change background color to blue on hover
-              color: 'white', // Change text color to white on hover 
-              duration: 0.3
-            });
-          };
+    //         gsap.to(containerRef.current, {
+    //           backgroundColor: 'blue', // Change background color to blue on hover
+    //           color: 'white', // Change text color to white on hover 
+    //           duration: 0.3
+    //         });
+    //       };
         
       
-          const onMouseLeave = () => {
-            gsap.to(containerRef.current, {
-              backgroundColor: 'transparent', // Restore original background color when hover ends
-              color: 'black', // Restore original text color when hover ends 
-              duration: 0.3
-            });
-          };
+    //       const onMouseLeave = () => {
+    //         gsap.to(containerRef.current, {
+    //           backgroundColor: 'transparent', // Restore original background color when hover ends
+    //           color: 'black', // Restore original text color when hover ends 
+    //           duration: 0.3
+    //         });
+    //       };
       
-          containerRef.addEventListener('mouseenter', onMouseEnter);
-          containerRef.addEventListener('mouseleave', onMouseLeave);
+    //       containerRef.addEventListener('mouseenter', onMouseEnter);
+    //       containerRef.addEventListener('mouseleave', onMouseLeave);
     
     
 
@@ -56,10 +56,11 @@ const Hero = () => {
                 <h1 className='text-8xl mt-40 mb-60 px-6 '>PROPELLING THE <br />
                     WORLD, BY DESIGN.
                 </h1>
+
                 
             </div>
 
-            <div ref={containerRef} className='second-div py-10 bg-gradient-to-br from-white to-white transition-all duration-500 hover:from-yellow-650 hover:to-yellow-700 hover:text-white' >
+            <div className='second-div py-10 bg-gradient-to-br from-white to-white transition-all duration-500 hover:from-yellow-650 hover:to-yellow-700 hover:text-white' >
 
                 <h1 className='text-8xl mt-80 py-6 px-6'>AMET MAGNIS DIAM <br />VARIUS VIVERRAAT</h1>
                 <p className='text-ms flex justify-end ml-auto mr-20 mt-5'>Lorem ipsum dolor sit amet, <br />consectetur adipisicing elit. <br />Voluptatum, sit. Lorem ipsum dolor sit amet <br />consectetur adipisicing elit. Obcaecati, debitis?</p>
@@ -144,14 +145,17 @@ const Hero = () => {
                 <div>
                     <img src={image6} alt="image6" />
                 </div>
-
+                <div className=''>
                 <div className='py-[20rem]'>
                     <h1 className='text-8xl ml-5'>INDUSTRIES<br/>WE SERVED</h1>
                     <p className='font-semibold text-s px-40 flex justify-end '>Lorem ipsum dolor sit amet consectetur<br/> adipisicing elit. Facere laboriosam soluta</p>
                     
                     <img src={glass} alt="glass" />
                     <img src={service} alt="serviceIcon" />
-                    <ul className=''>
+                    
+                </div>
+                <div>
+                <ul>
                     <li>FINTECH</li>
                     <li>TECHNOLOGY</li>
                     <li>E-COMMERCE</li>
@@ -162,11 +166,12 @@ const Hero = () => {
                     <li>MANUFACTURING</li>
                 </ul>
                 </div>
-                
                 </div>
+                
+        </div>
         
         
     )
 }
-}
+
 export default Hero
