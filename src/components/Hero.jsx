@@ -17,24 +17,37 @@ import girl from '../assets/Frame 1000001741 (3).png';
 import glass from '../assets/glass (1).png';
 import service from '../assets/glass (2).png';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css'; // Minified for production
+import SwiperCore, { Navigation, Pagination } from 'swiper/core';
+
+
+
+
 
 
 
 const Hero = () => {
+    SwiperCore.use([Navigation, Pagination]);
+    
 
-    // const HoverEffectExample = () => {
-    //     const containerRef = useRef(null);
-    //       const onMouseEnter = () => {
 
-    //         gsap.to(containerRef.current, {
+
+
+
+    {/* // const HoverEffectExample = () => { */}
+    {/* //     const containerRef = useRef(null);
+    //       const onMouseEnter = () => { */}
+
+    {/* //         gsap.to(containerRef.current, {
     //           backgroundColor: 'blue', // Change background color to blue on hover
     //           color: 'white', // Change text color to white on hover 
     //           duration: 0.3
     //         });
     //       };
-        
+         */}
       
-    //       const onMouseLeave = () => {
+    {/* //       const onMouseLeave = () => {
     //         gsap.to(containerRef.current, {
     //           backgroundColor: 'transparent', // Restore original background color when hover ends
     //           color: 'black', // Restore original text color when hover ends 
@@ -43,14 +56,31 @@ const Hero = () => {
     //       };
       
     //       containerRef.addEventListener('mouseenter', onMouseEnter);
-    //       containerRef.addEventListener('mouseleave', onMouseLeave);
+    //       containerRef.addEventListener('mouseleave', onMouseLeave); */}
     
     
 
     
 
     return (
+        
         <div className='main-container ' >
+            <Swiper
+          modules={[Navigation]}
+          
+          spaceBetween={30}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          dragable={{ dragable: true }}
+        >
+            
+
+            <SwiperSlide>
+                <div>
+                    <h2>Hello Pranav</h2>
+                </div>
+            </SwiperSlide>
 
             <div>
                 <h1 className='text-8xl mt-40 mb-60 px-6 '>PROPELLING THE <br />
@@ -74,8 +104,9 @@ const Hero = () => {
                 <p className='font-semibold text-s px-80 flex justify-end'>Lorem ipsum dolor sit amet consectetur<br/> adipisicing elit. Facere laboriosam soluta<br/> asperiores magnam neque quo sint dolores</p>
             </div>
             
-
-            <div className='border-t border-gray-800 py-20 overflow-x-auto whitespace-nowrap flex space-x-4'>
+            <SwiperSlide>
+            <div className='border-t border-gray-800 py-20 overflow-x-auto whitespace-nowrap'> 
+            {/* overflow-x-auto whitespace-nowrap flex space-x-4 */}
                 <h1 className='ml-[30px] text-[180px]'>CONSULTING <br/>AND STRATEGY</h1>
                 <ul className='leading-loose'>
                     <li className=''>MARKET RESEARCH</li>
@@ -114,6 +145,11 @@ const Hero = () => {
                 </ul>
                 
             </div>
+
+            </SwiperSlide>
+            
+            
+            
             <div className='border-t border-gray-700 flex items-center ml-5 py-20 mt-20'>
                 <h1 className='text-8xl '>PORTFOLIO</h1> 
                 <p className='font-semibold text-s px-40 flex justify-end ml-auto'>Lorem ipsum dolor sit amet consectetur<br/> adipisicing elit. Facere laboriosam soluta</p>
@@ -167,7 +203,8 @@ const Hero = () => {
                 </ul>
                 </div>
                 </div>
-                
+            
+                </Swiper>
         </div>
         
         
