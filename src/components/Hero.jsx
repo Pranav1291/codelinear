@@ -16,9 +16,12 @@ import socks from '../assets/Frame 1000001741 (2).png';
 import girl from '../assets/Frame 1000001741 (3).png';
 import glass from '../assets/glass (1).png';
 import service from '../assets/glass (2).png';
+import footerLogo from '../assets/Frame 513.svg';
+import Rights from '../assets/© Codelinear 2023. All Rights Reserved..png';
+import footer from '../assets/Frame 218.svg';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.min.css'; // Minified for production
+import 'swiper/swiper-bundle.min.css';
 import { Navigation, Pagination, Mousewheel } from "swiper/modules";
 
 import gsap from 'gsap';
@@ -37,6 +40,8 @@ const Hero = () => {
     const refImage = useRef(null);
     const refList = useRef(null);
     const refHeading = useRef(null);
+    const footerlogoRef = useRef(null);
+    //const circleRef = useRef(null);
 
 
     const [isHovered, setisHovered] = useState(false);
@@ -84,6 +89,7 @@ const Hero = () => {
             gsap.to(ref.current, {
                 background: 'linear-gradient(45deg, #D4A381, #46200D)',
                 color: 'white',
+                boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.3)',
                 duration: 0.5
             });
         } else {
@@ -144,52 +150,68 @@ const Hero = () => {
     }, [isListHovered]);
 
 
+    //for footer logo animation
+    useEffect(() => {
+        const footerLogo = footerlogoRef.current;
+
+        gsap.fromTo(
+            footerLogo,
+            { scale: 0.8 },
+            {
+              scale: 1.6,
+              duration: 2,
+              repeat: -1,
+              yoyo: true,
+              ease: 'power1.inOut'
+            }
+          );
+
+    },[])
 
 
+    // useEffect(() => {
+    //     const firstDiv = ref.current;
+    //     const circleDiv = circleRef.current;
 
+    //     const handleMouseEnter = () => {
+    //         gsap.to(circleDiv, {
+    //             attr: { r: 35 },
+    //             fill: '#D4A381',
+    //             duration: 0.5
+    //         }); 
+            
+    //         };
 
-
-    {/* // const HoverEffectExample = () => { */ }
-    {/* //     const containerRef = useRef(null);
-    //       const onMouseEnter = () => { */}
-
-    {/* //         gsap.to(containerRef.current, {
-    //           backgroundColor: 'blue', // Change background color to blue on hover
-    //           color: 'white', // Change text color to white on hover 
-    //           duration: 0.3
+    //     const handleMouseLeave = () => {
+    //         gsap.to(circleDiv, {
+    //             attr: { r: 30 },
+    //             fill: '#46200D',
+    //             duration: 0.5
     //         });
-    //       };
-         */}
+    //     };
 
-    {/* //       const onMouseLeave = () => {
-    //         gsap.to(containerRef.current, {
-    //           backgroundColor: 'transparent', // Restore original background color when hover ends
-    //           color: 'black', // Restore original text color when hover ends 
-    //           duration: 0.3
-    //         });
-    //       };
-      
-    //       containerRef.addEventListener('mouseenter', onMouseEnter);
-    //       containerRef.addEventListener('mouseleave', onMouseLeave); */}
+    //     circleDiv.addEventListener('mouseenter', handleMouseEnter);
+    //     circleDiv.addEventListener('mouseleave', handleSecondMouseLeave);
 
+
+    //     //clear 
+    //     return () => {
+    //         circleDiv.removeEventListener('mouseenter', handleMouseEnter);
+    //         circleDiv.removeEventListener('mouseleave', handleSecondMouseLeave);
+    //     };
+
+    // }, []);
 
 
 
 
     return (
 
-        <div className='main-container ' >
+        <div className='main-container w-screen' >
 
-
-
-
-
-
-
-
-            <div>
-                <h1 className='text-8xl mt-40 mb-60 px-6 '>PROPELLING THE <br />
-                    WORLD, BY DESIGN.
+            <div className='w-screen h-[1120.5px]'>
+                <h1 className='text-[5.2rem] font-semi leading-tight t w-[853.8px] h-[198px] mt-[178.5px] ml-[42px]'>PROPELLING THE <br />
+WORLD, BY DESIGN.
                 </h1>
 
 
@@ -199,46 +221,61 @@ const Hero = () => {
 
             <div ref={ref} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className='second-div py-10' >
 
-                <h1 className='AMET text-8xl mt-80 py-6 px-6'>AMET MAGNIS DIAM <br />VARIUS VIVERRAAT</h1>
+                <h1 className='AMET text-8xl mt-80 py-2 ml-5'>AMET MAGNIS DIAM <br />VARIUS VIVERRAAT</h1>
                 <p className='text-ms flex justify-end ml-auto mr-20 mt-5'>Lorem ipsum dolor sit amet, <br />consectetur adipisicing elit. <br />Voluptatum, sit. Lorem ipsum dolor sit amet <br />consectetur adipisicing elit. Obcaecati, debitis?</p>
                 <img className='flex justify-end ml-auto mt-20 mr-20 ' src={image3} alt="image3" />
 
                 <img className='px-6' src={image} alt="image" />
 
             </div>
-            <div className='flex items-center ml-5 py-20 mt-20'>
+            <div className='px-6 gap-[6px]'>
+            <div className='flex items-centergap-[257.25px] ml-5 py-20 mt-20'>
                 <h1 className='text-8xl '>SERVICES</h1>
-                <p className='font-semibold text-s ml-[12rem] flex justify-end'>Lorem ipsum dolor sit amet consectetur<br /> adipisicing elit. Facere laboriosam soluta<br /> asperiores magnam neque quo sint dolores</p>
+                <p className='font-semibold text-s ml-[12rem] flex justify-end'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere <br/> laboriosam soluta asperiores magnam neque quo sint dolores<br/>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
             </div>
+
+            </div>
+            
 
 
             <Swiper
 
                 direction="horizontal"
                 spaceBetween={50}
-                slidesPerView={0.8}
+                slidesPerView={0.5}
+                mousewheel={{ releaseOnEdges: true, sensitivity: 0.8 }}
+                modules={[Mousewheel]}
 
-                dragable={true}
-                modules={[Mousewheel, Navigation]}
+                draggable={true}
+                
             >
 
 
-                <div className='border-t border-gray-800 py-20 flex space-x-10 '>
+                <div className='border-t border-gray-800 h-[873px] py-20 flex space-x-5 '>
                     {/* overflow-x-auto whitespace-nowrap flex space-x-4 */}
 
 
 
                     <SwiperSlide>
-                        <div className='flex gap-[-50px]'>
-                            <h1 className='ml-[30px] text-[150px]'>CONSULTING AND<br/> STRATEGY</h1>
-                            <ul className='leading-loose'>
+                        < div className='flex space-x-[-100px] text-#2C2C2C'>
+
+                            
+                            <h1 className='ml-5 text-[220px] leading-none '>CONSULTING <br/>AND STRATEGY</h1>
+
+
+                            
+                            
+                            <ul className='leading-loose font-grey-500'>
                                 <li className=''>MARKET RESEARCH</li>
 
                                 <li>STAKEHOLDER WORKSHOPS</li>
                                 <li>PRODUCT STRATEGY AND ROADMAPPING</li>
-                                <li>TECHNOLOGY CONSULTING AND PLATFORM PLANNING</li>
+                                <li>TECHNOLOGY CONSULTING <br/>AND PLATFORM PLANNING</li>
                                 <li>GTM STRATEGY</li>
                             </ul>
+
+                            
+                            
                         </div>
 
                     </SwiperSlide>
@@ -247,9 +284,9 @@ const Hero = () => {
 
 
                     <SwiperSlide>
-                        <div className='flex'>
-                            <h1 className='text-[180px]'>USER<br />EXPERIENCE</h1>
-                            <ul className='leading-loose'>
+                        <div className='flex space-x-[-650px]'>
+                            <h1 className='text-[220px] leading-none'>USER<br />EXPERIENCE</h1>
+                            <ul className=' leading-loose font-grey-500'>
                                 <li>UX AUDIT</li>
                                 <li>UX RESEARCH</li>
                                 <li>UI UX CONSULTING</li>
@@ -264,10 +301,10 @@ const Hero = () => {
 
 
                     <SwiperSlide>
-                    <div className='flex'>
-                        <h1 className='ml-[30px] text-[180px]'>PRODUCT<br /> DEVELOPMENT</h1>
+                    <div className='flex space-x-[-520px]'>
+                        <h1 className='ml-[30px] text-[220px] leading-none'>PRODUCT<br /> DEVELOPMENT</h1>
 
-                        <ul className='leading-loose'>
+                        <ul className='leading-loose font-grey-500'>
                             <li className=''>WEBSITE DEVELOPMENT</li>
 
                             <li>WEB APP DEVELOPMENT</li>
@@ -284,9 +321,9 @@ const Hero = () => {
 
 
                    <SwiperSlide>
-                   <div className='flex'>
-                        <h1 className='text-[180px]'>DIGITAL<br />MARKETING</h1>
-                        <ul className='leading-loose'>
+                   <div className='flex space-x-[-400px]'>
+                        <h1 className='text-[220px] text-grey-500 leading-none'>DIGITAL<br />MARKETING</h1>
+                        <ul className='leading-loose font-grey-500'>
                             <li>SEO</li>
                             <li>SOCIAL MEDIA</li>
                             <li>PAID SEARCH</li>
@@ -323,30 +360,37 @@ const Hero = () => {
                 direction="horizontal"
                 spaceBetween={50}
                 slidesPerView={2}
+                mousewheel={{ releaseOnEdges: true, sensitivity: 0.5 }}
 
-                dragable={true}
                 modules={[Mousewheel]}
+                draggable={true}
             >
-                 
-                 <div className='flex '>
 
+                <div className='flex'>
+                 
+                 
+                      
                  <SwiperSlide>
                     <img src={image4} alt="image4" />
+                    <h3 className='mt-2 font-semibold'>MANGO</h3>
                     </SwiperSlide>
 
                     <SwiperSlide>
                     <img src={image5} alt="image5" />
+                    <h3 className='mt-2 font-semibold'>COWBOY</h3>
 
                     </SwiperSlide>
 
                     <SwiperSlide>
                     <img src={cloth} alt="cloth" />
+                    <h3 className='mt-2 font-semibold'>TRADEJINI</h3>
 
                         
                     </SwiperSlide>
 
                     <SwiperSlide>
                     <img src={bull} alt="bull" />
+                    <h3 className='mt-2 font-semibold'>KLUBB</h3>
 
 
                     </SwiperSlide>
@@ -355,23 +399,27 @@ const Hero = () => {
 
                     <SwiperSlide>
                     <img src={phone} alt="phone" />
+                    <h3 className='mt-2 font-semibold'>IKEA</h3>
 
 
                     </SwiperSlide>
                     <SwiperSlide>
                     <img src={table} alt="table" />
+                    <h3 className='mt-2 font-semibold'>WILLIAM ABRAHAM</h3>
 
 
                     </SwiperSlide>
 
                     <SwiperSlide>
                     <img src={socks} alt="socks" />
+                    <h3 className='mt-2 font-semibold'>VUORI</h3>
 
 
                     </SwiperSlide>
 
                     <SwiperSlide>
                     <img src={girl} alt="girl" />
+                    <h3 className='mt-2 font-semibold'>GIRL</h3>
 
 
                     </SwiperSlide>
@@ -383,15 +431,7 @@ const Hero = () => {
                  
                
                 </Swiper>
-                <div className='flex justify-evenly font-semibold py-2'>
-                    <h3>MANGO</h3>
-                    <h3>COWBOY</h3>
-                    <h3>TRADEJINI</h3>
-                    <h3>KLUBB</h3>
-                    <h3>IKEA</h3>
-                    <h3>WILLIAM ABRAHAM</h3>
-                    <h3>VUORI</h3>
-                </div>
+                
 
                 <div>
                     <img src={image6} alt="image6" />
@@ -411,7 +451,7 @@ const Hero = () => {
 
                     <div ref={refImage} onMouseEnter={handleThirdMouseEnter} onMouseLeave={handleThirdMouseLeave} className='flex '>
                         <div className='w-1/2'> <img src={glass} alt="glass" /></div>
-                        <div ref={refList}> <ul className='py-5 justify-end ml-auto px-20 text-[21px] space-y-20'>
+                        <div ref={refList}> <ul className=' py-5 justify-end ml-auto px-20 text-[21px] space-y-20'>
                             <li>FINTECH</li>
                             <li>TECHNOLOGY</li>
                             <li>E-COMMERCE</li>
@@ -431,7 +471,16 @@ const Hero = () => {
 
                 </div>
                 <div ref={refHeading} onMouseEnter={handleHeadingMouseEnter} onMouseLeave={handleHeadingMouseLeave} className='text-[13rem] flex justify-center mt-[50px]'>
-                    <h1 className=''>LETS TALK .</h1>
+                    <h1 className=''>LETS TALK</h1>
+                </div>
+
+                <div className='h-[120.25px] ml-5'>
+                                                                 
+                            <div ><img ref={footerlogoRef} className='logo-footer w-[169.5px] h-[60.75px] ' src={footerLogo} alt="footerlogo" /></div>                                           
+                            <div><img className='w-[237px] h-[20px] ' src={Rights} alt="rightsfooter" /></div>
+
+                            <div className='flex justify-end mr-10 mt-[-70px]'><img src={footer} alt="footer" /></div>
+                                    
                 </div>
 
 
