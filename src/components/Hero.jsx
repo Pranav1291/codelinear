@@ -19,7 +19,7 @@ import service from '../assets/glass (2).png';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css'; // Minified for production
-import { Mousewheel } from "swiper/modules";
+import { Navigation, Pagination, Mousewheel } from "swiper/modules";
 
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -219,7 +219,7 @@ const Hero = () => {
                 slidesPerView={0.8}
 
                 dragable={true}
-                modules={[Mousewheel]}
+                modules={[Mousewheel, Navigation]}
             >
 
 
