@@ -89,7 +89,7 @@ const Hero = () => {
             gsap.to(ref.current, {
                 background: 'linear-gradient(45deg, #D4A381, #46200D)',
                 color: 'white',
-                boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.3)',
+                
                 duration: 0.5
             });
         } else {

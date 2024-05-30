@@ -16,7 +16,7 @@ const Navbar = () => {
     if (menuOpen) {
       gsap.to(".menu", { duration: 0.7, x: 0, opacity: 1, display: 'block' });
     } else {
-      gsap.to(".menu", { duration: 0.7, x: -300, opacity: 0, display: 'none' });
+      gsap.to(".menu", { duration: 0.7, x: 300, opacity: 0, display: 'none' });
     }
   }, [menuOpen]);
 
@@ -50,7 +50,7 @@ const Navbar = () => {
     <div className='sticky top-0 mt-[-0.8px] ml-[-0.64px]'>
       <img className='ml-5 w-32 ' src={logo} alt="Nothing" />
 
-      <button className='hamburger flex justify-end ml-auto mr-20 mt-[-40px]' onClick={() => setMenuOpen(!menuOpen)}>
+      <button className='hamburger h-[50px] flex justify-end ml-auto mr-20 mt-[-40px]' onClick={() => setMenuOpen(!menuOpen)}>
       
       <img  src={logo2} alt="logo2" />
       </button>
@@ -62,14 +62,14 @@ const Navbar = () => {
 
 
 
-      <div className='menu flex justify-end ml-auto '>
+      <div className='menu flex  ml-auto '>
 
       
-      <ul className='flex justify-evenly font-semi'>
-          <li>Home</li>
-          <li>About</li>
-          <li>Service</li>
-          <li>Contact</li>
+      <ul className='flex text-xs justify-end gap-5 mr-40 mt-[-30px] ml-auto'>
+          <li>about Us</li>
+          <li>services</li>
+          <li>work</li>
+          <li>Let's Talk</li>
       </ul>
 
       </div>
