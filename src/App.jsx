@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../src/components/Navbar.jsx';
-import Hero from '../src/components/Hero.jsx'
+import Hero2 from './components/Hero2.jsx'
 import './index.css'
 
 
@@ -9,7 +9,8 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <Hero />
+      {/* <Hero1 /> */}
+      <Hero2 />
       
     </div>
   )

@@ -51,7 +51,7 @@ const Navbar = () => {
 
 
   return (
-    <div className='sticky top-0 mt-[-0.8px] ml-[-0.64px]'>
+    <div className='h-[65.97px] sticky top-0 justify-between mt-[-0.8px] ml-[-0.64px]'>
       
       <img className='ml-5 w-32 ' src={logo} alt="Nothing" />
 
@@ -90,7 +90,7 @@ const Navbar = () => {
       
 
 
-      </div>
+    </div>
 
       
     
