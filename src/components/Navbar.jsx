@@ -53,7 +53,7 @@ const Navbar = () => {
   return (
     <div className='h-[65.97px] sticky top-0 justify-between mt-[-0.8px] ml-[-0.64px]'>
       
-      <img className='ml-5 w-32 ' src={logo} alt="Nothing" />
+      <img className='ml-5 w-[99.1px] h-[45.71px] ' src={logo} alt="Nothing" />
 
       <button className='hamburger h-[50px] flex justify-end ml-auto mr-20 mt-[-40px]' onClick={() => setMenuOpen(!menuOpen)}>
       
