@@ -6,9 +6,12 @@ export default {
   ],
   theme: {
     extend: {
-      width: {
-        'fixed-1440': '1440px',
+      colors: {
+        'custom-green' : '#577F3E',
+        'custom-bg' : '#D3DAA7',
       },
+
+      
     },
   },
   plugins: [],

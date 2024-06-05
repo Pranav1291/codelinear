@@ -1,6 +1,10 @@
 <svg width="90" height="89" viewBox="0 0 90 89" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="44.8558" cy="44.4689" r="43.6546" transform="rotate(-90 44.8558 44.4689)" stroke="#131313"/>
-<rect x="35.139" y="45.0488" width="1.15946" height="19.2297" transform="rotate(-90 35.139 45.0488)" fill="#131313"/>
-<rect x="47.3485" y="37.0186" width="1.15946" height="9.75225" transform="rotate(-38.8464 47.3485 37.0186)" fill="#131313"/>
-<rect width="1.15946" height="9.75225" transform="matrix(0.77883 0.627235 0.627235 -0.77883 47.3484 51.9147)" fill="#131313"/>
+
 </svg>
+
+
+<!-- <rect x="35.139" y="45.0488" width="1.15946" height="19.2297" transform="rotate(-90 35.139 45.0488)" fill="#131313"/>
+<rect x="47.3485" y="37.0186" width="1.15946" height="9.75225" transform="rotate(-38.8464 47.3485 37.0186)" fill="#131313"/> -->
+<!-- <rect width="1.15946" height="9.75225" transform="matrix(0.77883 0.627235 0.627235 -0.77883 47.3484 51.9147)" fill="#131313"/> -->
+

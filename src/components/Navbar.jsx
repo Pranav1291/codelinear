@@ -34,14 +34,14 @@ const Navbar = () => {
     if (isAnimated) {
       // Reset to original state
       const tl = gsap.timeline();
-      tl.to(line1Ref.current, { rotation: 0, opacity: 1, transformOrigin: "50% 50%", duration: 0.7 })
-        .to(line2Ref.current, { rotation: 0, transformOrigin: "50% 50%", duration: 0.7 }, 0);
+      tl.to(line1Ref.current, { rotation: 0, opacity: 1, transformOrigin: "50% 50%", duration: 0.7, x: 0, y: 0 })
+        .to(line2Ref.current, { rotation: 0, transformOrigin: "50% 50%", duration: 0.7, x: 0, y: 0 }, 0);
     } else {
       // Animate
       const tl = gsap.timeline();
-      tl.to(line1Ref.current, { rotation: 90, transformOrigin: "50% 50%", duration: 0.7 })
+      tl.to(line1Ref.current, { rotation: 90, transformOrigin: "50% 50%", duration: 0.7, x: 22, y: 10 })
         .to(line1Ref.current, { opacity: 0, duration: 1 }, "<") // "<" ensures the fade starts at the same time as the rotation
-        .to(line2Ref.current, { rotation: 90, transformOrigin: "50% 50%", duration: 0.7 }, 0);
+        .to(line2Ref.current, { rotation: 90, transformOrigin: "50% 50%", duration: 0.7, x: 22, y: 10  }, 0);
     }
     setIsAnimated(!isAnimated);
   };
@@ -51,15 +51,15 @@ const Navbar = () => {
 
 
   return (
-    <div className='h-[65.97px] sticky top-0 justify-between mt-[-0.8px] ml-[-0.64px]'>
+    <div className='h-[65.97px] sticky top-0 justify-between mt-[-0.8px] ml-5'>
       
       <img className='ml-5 w-[99.1px] h-[45.71px] ' src={logo} alt="Nothing" />
 
-      <button className='hamburger h-[50px] flex justify-end ml-auto mr-20 mt-[-40px]' onClick={() => setMenuOpen(!menuOpen)}>
+      <button className='hamburger h-[50px] flex justify-end ml-auto mr-20 mt-[-40px] mb-[2px]' onClick={() => setMenuOpen(!menuOpen)}>
       
       {/* <img  src={logo2} alt="logo2" /> */}
       
-      <div onClick={handleClick}>
+      <div className='' onClick={handleClick}>
       <svg id="svg" width="48" height="39" viewBox="0 0 48 39" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g style={{ mixBlendMode: "difference" }}>
           <line ref={line1Ref} x1="0.162234" y1="37.3264" x2="47.3588" y2="37.3266" stroke="black" strokeWidth="1.49342"/>
@@ -76,7 +76,7 @@ const Navbar = () => {
 
 
 
-      <div className='menuhamburger flex  ml-auto '>
+      <div className='menuhamburger flex  ml-auto'>
 
       
       <ul className='menu-1 flex text-xs justify-end gap-5 mr-40 mt-[-30px] ml-auto'>
