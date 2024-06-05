@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import image from '../assets/Frame 567.svg'
 // import image2 from '../assets/Frame 461.svg';
 
-import image3 from '../assets/Component 41 (1).svg';
+
 import image4 from '../assets/pexels-anh-khac-6318739 1.png';
 import image5 from '../assets/pexels-deva-darshan-1173777 1.png';
 import image6 from '../assets/Frame 20.png';
@@ -14,16 +14,15 @@ import phone from '../assets/Frame 1000001741.png';
 import table from '../assets/Frame 1000001741 (1).png';
 import socks from '../assets/Frame 1000001741 (2).png';
 import girl from '../assets/Frame 1000001741 (3).png';
-import glass from '../assets/glass (1).png';
-import service from '../assets/glass (2).png';
+
 
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
-import { Navigation, Pagination, Mousewheel } from "swiper/modules";
+import { Mousewheel } from "swiper/modules";
 
 import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
+//import { useGSAP } from '@gsap/react';
 
  
 
