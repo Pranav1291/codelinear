@@ -202,7 +202,7 @@ export default function Work() {
 
   return (
     <section
-      className="services-section p-5"
+      className="services-section p-5 "
       ref={about}
       onMouseEnter={animate}
       onMouseLeave={animateout}

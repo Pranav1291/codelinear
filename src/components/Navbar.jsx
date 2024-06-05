@@ -6,6 +6,7 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 //import HamburgerIcon from './Hamburger';
 // import '../index.css';
+//import 'antd/dist/antd.min.css';
 
 const Navbar = () => {
   //const hamburgerRef = useRef(null);
@@ -51,7 +52,10 @@ const Navbar = () => {
 
 
   return (
-    <div className='h-[65.97px] sticky top-0 justify-between mt-[-0.8px] ml-5'>
+    
+
+    <section className='md:w-1/2 lg:w-1/3 xl:w-screen mx-auto mt-4'>
+    <div className='h-[65.97px] sticky top-0 mt-[-0.8px] ml-5 ' >
       
       <img className='ml-5 w-[99.1px] h-[45.71px] ' src={logo} alt="Nothing" />
 
@@ -91,6 +95,7 @@ const Navbar = () => {
 
 
     </div>
+    </section>
 
       
     

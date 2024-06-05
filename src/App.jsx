@@ -5,11 +5,12 @@ import './index.css'
 import Services from'../src/components/Service.jsx'
 import Letstalk from '../src/components/LetsTalk.jsx'
 import Footer from '../src/components/Footer.jsx';
+//import 'antd/dist/antd.min.css';
 
 const App = () => {
   
   return (
-    <div>
+    <div className=' '>
       <Navbar />
       {/* <Hero1 /> */}
       <Hero2 />

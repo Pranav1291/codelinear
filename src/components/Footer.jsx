@@ -4,8 +4,10 @@ import Rights from '../assets/© Codelinear 2023. All Rights Reserved..png';
 import footer from '../assets/Frame 218.svg';
 
 const Footer = () => {
+    
     return (
-        <div>
+        <section className=''>
+            <div className='' >
             <div className='h-[120.25px] ml-5'>
 
                 <div ><img className='logo-footer w-[169.5px] h-[60.75px] ' src={footerLogo} alt="footerlogo" /></div>
@@ -16,6 +18,10 @@ const Footer = () => {
 
             </div>
         </div>
+
+
+        </section>
+        
     )
 }
 

@@ -25,6 +25,8 @@ import { Navigation, Pagination, Mousewheel } from "swiper/modules";
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 
+ 
+
 
 
 
@@ -233,197 +235,12 @@ const Hero = () => {
     };
 
 
-    //Services Button animation
-    // const circle2Ref = useRef(null);
-    // const rect4Ref = useRef(null);
-    // // const rect5Ref = useRef(null);
-    // // const rect6Ref = useRef(null);
-    // const servicesRef = useRef(null);
-
-    // const handleServicesMouseEnter = () => {
-    //     gsap.to(circle2Ref.current, {
-    //         scale: 1.1, // Increase size
-    //         duration: 0.5,
-    //         transformOrigin: "50% 50%",
-    //         filter: "invert(100%)" // Change stroke color
-    //     });
-
-    //     gsap.to(rect4Ref.current, {
-    //         x: 10, // Move to the right
-    //         duration: 0.5,
-    //         filter: "invert(100%)", // Change fill color
-    //         stagger: 0.1,
-    //     });
-    //     gsap.to(servicesRef.current, {
-    //         filter: "invert(100%)",
-    //     })
-    // };
-
-    // const handleServiceMouseLeave = () => {
-    //     gsap.to(circle2Ref.current, {
-    //         scale: 1, // Reset size
-    //         duration: 0.4,
-    //         filter: "invert(100%)" // Reset stroke color
-    //     });
-
-    //     gsap.to(rect4Ref.current, {
-    //         x: 0, // Reset position
-    //         duration: 0.4,
-    //         filter: "invert(100%)", // Reset fill color
-    //         stagger: 0.1
-    //     });
-    //     gsap.to(servicesRef.current, {
-    //         filter: "invert(100%)",
-    //         duration: 0.4
-    //     });
-
-
-    // };
-
-
-    //Services List Effects Animation
-
-
-    //const liRefs = useRef([]);
-    // const imgRef = useRef(null);
-
-    // // Function to handle mouse enter
-    // const handleServiceListMouseEnter = () => {
-    //     // gsap.to(liRefs.current[index], {
-    //     //     scale: 1.5, // Increase size
-    //     //     duration: 0.5,
-    //     //     backgroundColor: '#D3DAA7', // Change background color
-    //     //     ease: 'power1.out',
-    //     //     fill: "#577F3E"
-    //     // });
-
-    //     gsap.to(imgRef.current, {
-    //         opacity: 0, // Hide image
-    //         duration: 0.5,
-    //         ease: 'power1.out'
-    //     });
-    // };
-
-    // Function to handle mouse leave
-    //const handleServiceListMouseLeave = () => {
-        // gsap.to(liRefs.current[index], {
-        //     scale: 1, // Reset size
-        //     duration: 0.5,
-        //     backgroundColor: 'initial', // Reset background color
-        //     ease: 'power1.out'
-        // });
-
-    //     gsap.to(imgRef.current, {
-    //         opacity: 1, // Show image
-    //         duration: 0.5,
-    //         ease: 'power1.out'
-    //     });
-    // };
-
-
-
-    // const servicesListRef = useRef(null);
-
-    // useEffect(() => {
-    //     const listItems = servicesListRef.current.children;
-    //     Array.from(listItems).forEach(item => {
-    //         gsap.set(item, { width: 'auto', scale: 1, color: 'black' });
-
-    //         item.addEventListener('mouseenter', () => {
-    //             gsap.to(item, {
-    //                 width: '100%',
-    //                 scale: 1.2,
-    //                 duration: 0.3,
-    //                 ease: 'power1.inOut',
-    //                 color: '#D3DAA7'
-    //             });
-    //         });
-
-    //         item.addEventListener('mouseleave', () => {
-    //             gsap.to(item, {
-    //                 width: 'auto',
-    //                 scale: 1,
-    //                 duration: 0.3,
-    //                 ease: 'power1.inOut',
-    //                 color: 'white'
-    //             });
-    //         });
-    //     });
-
-    //     // Cleanup function to remove event listeners when component unmounts
-    //     return () => {
-    //         Array.from(listItems).forEach(item => {
-    //             item.removeEventListener('mouseenter', () => { });
-    //             item.removeEventListener('mouseleave', () => { });
-    //         });
-    //     };
-    // }, []);
-
-
-
-    //Industries served list animation
-    // const divRef = useRef(null);
-    // const text1Ref = useRef(null);
-
-    // const handleMouseServiceListEnter = () => {
-    //     gsap.to(divRef.current, {
-    //       backgroundColor: '#D3DAA7',
-    //        // Change background color
-    //       duration: 0.5,
-    //       scale: 1.5
-    //     });
-
-    //     gsap.to(text1Ref.current, {
-    //       scale: 1.5,
-    //       color:"#577F3E",
-    //       x: -10 // Make text bigger
-
-    //     });
-    //   };
-
-    //   const handleMouseServiceListLeave = () => {
-    //     gsap.to(divRef.current, {
-    //       background: '', // Reset background color
-    //       duration: 0.5,
-    //       scale: 1
-    //     });
-
-    //     gsap.to(text1Ref.current, {
-    //       scale: 1,
-    //       color: "#D3DAA7",
-    //       // Reset text size
-
-    //     });
-    //   };
-
-    //industries hover list ----------------------------------------------------------<<<<<<<<<<<<<<<<<<<<
-
-    //const [isIndustriesListHovered, setisIndustriesListHovered] = useState(false);
-    // //const [isIndustriesImageHovered, setisIndustriesImageHovered] = useState(false);
-
-    // // const handleIndustriesImageMouseEnter = () => {
-    // //     setisIndustriesImageHovered(true)
-    // // };
-
-    // // const handleIndustriesImageMouseLeave = () => {
-    // //     setisIndustriesImageHovered(false);
-    // // };
-
-    // const handleIndustriesListMouseEnter = () => {
-    //     setisIndustriesListHovered(true);
-    //   };
-
-    //   const handleIndustriesListMouseLeave = () => {
-    //     setisIndustriesListHovered(false);
-    //   };
-
-
 
 
 
     return (
-
-        <div className='main-container w-[1440px] p-5' >
+        <section className=''>
+            <div className='main-container  p-5' >
 
             <div className='w-[1440px] h-[198px] mt-[178.5px] ml-[42px]'>
                 <h1 className='text-[5.2rem] font-semi leading-tight'>PROPELLING THE <br />WORLD, BY DESIGN.
@@ -704,6 +521,10 @@ const Hero = () => {
 
 
         </div >
+
+        </section>
+
+        
 
 
 
