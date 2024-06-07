@@ -6,7 +6,7 @@ import footer from '../assets/Frame 218.svg';
 const Footer = () => {
     
     return (
-        <section className=''>
+        <section className='text-center md:text-left'>
             <div className='' >
             <div className='h-[120.25px] ml-5'>
 

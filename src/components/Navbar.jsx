@@ -59,7 +59,7 @@ const Navbar = () => {
                                                                           {/* this one */}
 
 
-      <img className='ml-[55px] w-[99.1px] h-[45.71px] max-md:text-4xl' src={logo} alt="Nothing" />
+      <img className='ml-[55px] w-[99.36px] h-[45.71px] max-sm:w-[85px] max-md:w-[90px] max-lg:w-[95px] max-xl:w-[99.36px] max-2xl:w-[105px]' src={logo} alt="Nothing" />
 
       <button className='hamburger h-[50px] flex justify-end ml-auto mr-5 mt-[-40px] mb-[2px] ' onClick={() => setMenuOpen(!menuOpen)}>
       

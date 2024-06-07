@@ -19,7 +19,7 @@ const LetsTalk = () => {
 
 
   return (
-    <section className=''>
+    <section className='text-center md:text-left'>
     
       <div className='text-2xl w-[1440px]-full text-semibold flex justify-center mt-5 h-[4rem]'>
                 <h4 className=''>Wanna Know a Secret ?</h4><br />

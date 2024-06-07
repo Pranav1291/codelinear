@@ -202,15 +202,15 @@ export default function Work() {
 
   return (
     <section
-      className="services-section  mx-auto"
+      className="services-section  "
       ref={about}
       onMouseEnter={animate}
       onMouseLeave={animateout}
     >
       <div className="service ">
         <div className="work-content">
-          <h1 className="work-head max-md:text-[64px] max-lg:text-[72px] max-sm:text-[56px] max-xl:text-[89px] max-2xl:text-[100px]">INDUSTRIES WE SERVED</h1>
-          <p className="work-para max-md:text-[14px] max-lg:text-[15px] max-sm:text-[13px] max-xl:text-base max-2xl:text-[17px] ">
+          <h1 className="work-head max-sm:text-[30px] max-md:text-[40px] max-lg:text-[50px] max-xl:text-[89px] max-2xl:text-[200px]">INDUSTRIES WE SERVED</h1>
+          <p className="work-para max-sm:text-[13px] max-xl:text-base max-2xl:text-[17px] ">
             Id donec rutrum mauris venenatis ac. Id metus lorem mus sit magna
             varius cum proin. Accumsan volutpat natoque purus pellentesque nec
             ac nulla turpis consectetur. Fermentum ut non commodo lacus enim.
@@ -222,7 +222,7 @@ export default function Work() {
             <img src={arrow} alt="" className="arrow" ref={arrow1} />
           </div>
         </div>
-        <div className="max-md:w-[391.95px] max-lg:w-[522.60px] max-sm:w-[261.30px] max-xl:w-base max-2xl:w-[718.58px]">
+        <div className="max-sm:w-[300px] max-md:w-[400px] max-lg:w-[500px] max-xl:w-[653.25px] max-2xl:w-[700px]">
           <img src={serviceimage} alt="" className="serviceimage" ref={serv} />
         </div>
         <div
