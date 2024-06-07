@@ -10,7 +10,7 @@ import Footer from '../src/components/Footer.jsx';
 const App = () => {
   
   return (
-    <div className=' '>
+    <div className='overflow-x-hidden'>
       <Navbar />
       {/* <Hero1 /> */}
       <Hero2 />

@@ -54,17 +54,19 @@ const Navbar = () => {
   return (
     
 
-    <section className='md:w-1/2 lg:w-1/3 xl:w-screen mx-auto mt-4'>
-    <div className='h-[65.97px] sticky top-0 mt-[-0.8px] ml-5 ' >
-      
-      <img className='ml-5 w-[99.1px] h-[45.71px] ' src={logo} alt="Nothing" />
+    <section className='nav-container '>
+    <div className='h-[65.97px] sticky top-0 mt-[-0.8px] ml-5 '> 
+                                                                          {/* this one */}
 
-      <button className='hamburger h-[50px] flex justify-end ml-auto mr-20 mt-[-40px] mb-[2px]' onClick={() => setMenuOpen(!menuOpen)}>
+
+      <img className='ml-[55px] w-[99.1px] h-[45.71px] max-md:text-4xl' src={logo} alt="Nothing" />
+
+      <button className='hamburger h-[50px] flex justify-end ml-auto mr-5 mt-[-40px] mb-[2px] ' onClick={() => setMenuOpen(!menuOpen)}>
       
       {/* <img  src={logo2} alt="logo2" /> */}
       
       <div className='' onClick={handleClick}>
-      <svg id="svg" width="48" height="39" viewBox="0 0 48 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg className='max-md:img-4xl' id="svg" width="48" height="39" viewBox="0 0 48 39" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g style={{ mixBlendMode: "difference" }}>
           <line ref={line1Ref} x1="0.162234" y1="37.3264" x2="47.3588" y2="37.3266" stroke="black" strokeWidth="1.49342"/>
           <line ref={line2Ref} x1="0.162234" y1="22.3186" x2="47.3588" y2="22.3188" stroke="black" strokeWidth="1.79342"/>
