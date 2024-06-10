@@ -2,6 +2,7 @@ import "./Service.css";
 import { gsap } from "gsap/gsap-core";
 import { useRef } from "react";
 import arrow from "/src/assets/arrow.svg";
+import circle from '/src/assets/Ellipse 1.svg';
 import serviceimage from "/src/assets/glass (1).png";
 
 export default function Work() {
@@ -208,9 +209,9 @@ export default function Work() {
       onMouseLeave={animateout}
     >
       <div className="service ">
-        <div className="work-content">
-          <h1 className="work-head max-sm:text-[30px] max-md:text-[40px] max-lg:text-[50px] max-xl:text-[89px] max-2xl:text-[200px]">INDUSTRIES WE SERVED</h1>
-          <p className="work-para max-sm:text-[13px] max-xl:text-base max-2xl:text-[17px] ">
+        <div className="work-content ">
+          <h1 className="work-head">INDUSTRIES WE SERVED</h1>
+          <p className="work-para  ">
             Id donec rutrum mauris venenatis ac. Id metus lorem mus sit magna
             varius cum proin. Accumsan volutpat natoque purus pellentesque nec
             ac nulla turpis consectetur. Fermentum ut non commodo lacus enim.
@@ -219,10 +220,12 @@ export default function Work() {
         <div className="services-button ">
           <p className="about-button-content">SERVICES</p>
           <div className="arrow-div" ref={arrowanimate}>
+            
             <img src={arrow} alt="" className="arrow" ref={arrow1} />
           </div>
+          <img src={circle} alt="" className="circle" ref={arrowanimate}/>
         </div>
-        <div className="max-sm:w-[300px] max-md:w-[400px] max-lg:w-[500px] max-xl:w-[653.25px] max-2xl:w-[700px]">
+        <div className="">
           <img src={serviceimage} alt="" className="serviceimage" ref={serv} />
         </div>
         <div
@@ -258,7 +261,7 @@ export default function Work() {
             onMouseLeave={unhover1}
             ref={menuitems1}
           >
-            <h1 className="menu-head mr-[-52px]" ref={menuhead1}>
+            <h1 className="menu-head " ref={menuhead1}>
               TECHNOLOGY
             </h1>
             <p className="menu-para" ref={menupara1}>
@@ -276,7 +279,7 @@ export default function Work() {
             onMouseLeave={unhover2}
             ref={menuitems2}
           >
-            <h1 className="menu-head mr-[-90px]" ref={menuhead2}>
+            <h1 className="menu-head" ref={menuhead2}>
               ECOMMERCE
             </h1>
             <p className="menu-para" ref={menupara2}>
@@ -289,7 +292,7 @@ export default function Work() {
             onMouseLeave={unhover3}
             ref={menuitems3}
           >
-            <h1 className="menu-head mr-[-24px]" ref={menuhead3}>
+            <h1 className="menu-head " ref={menuhead3}>
               SUPPLY CHAIN AND LOGISTICS
             </h1>
             <p className="menu-para" ref={menupara3}>
@@ -305,7 +308,7 @@ export default function Work() {
             onMouseLeave={unhover4}
             ref={menuitems4}
           >
-            <h1 className="menu-head mr-[-50px]" ref={menuhead4}>
+            <h1 className="menu-head " ref={menuhead4}>
               HEALTHCARE
             </h1>
             <p className="menu-para" ref={menupara4}>
@@ -323,7 +326,7 @@ export default function Work() {
             onMouseLeave={unhover5}
             ref={menuitems5}
           >
-            <h1 className="menu-head mr-[-40px]" ref={menuhead5}>
+            <h1 className="menu-head " ref={menuhead5}>
               FOOD AND BEVERAGES
             </h1>
             <p className="menu-para" ref={menupara5}>
@@ -341,7 +344,7 @@ export default function Work() {
             onMouseLeave={unhover6}
             ref={menuitems6}
           >
-            <h1 className="menu-head mr-[-50px]" ref={menuhead6}>
+            <h1 className="menu-head " ref={menuhead6}>
               BIOPHARMACEUTICAL
             </h1>
             <p className="menu-para" ref={menupara6}>
@@ -357,7 +360,7 @@ export default function Work() {
             onMouseLeave={unhover7}
             ref={menuitems7}
           >
-            <h1 className="menu-head mr-[-90px]" ref={menuhead7}>
+            <h1 className="menu-head " ref={menuhead7}>
               MANUFACTURING
             </h1>
             <p className="menu-para" ref={menupara7}>

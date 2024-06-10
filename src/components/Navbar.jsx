@@ -54,50 +54,34 @@ const Navbar = () => {
   return (
     
 
-    <section className='nav-container '>
-    <div className='h-[65.97px] sticky top-0 mt-[-0.8px] ml-5 '> 
-                                                                          {/* this one */}
+    <section className='nav-container sticky'>
+  <div className='h-[65.97px]  top-0 mt-[-0.8px] ml-5'>
 
+    <img className='ml-[55px] w-[99.36px] h-[45.71px] max-sm:w-[85px] max-md:w-[90px] max-lg:w-[95px] max-xl:w-[99.36px] max-2xl:w-[105px]' src={logo} alt="Nothing" />
 
-      <img className='ml-[55px] w-[99.36px] h-[45.71px] max-sm:w-[85px] max-md:w-[90px] max-lg:w-[95px] max-xl:w-[99.36px] max-2xl:w-[105px]' src={logo} alt="Nothing" />
-
-      <button className='hamburger h-[50px] flex justify-end ml-auto mr-5 mt-[-40px] mb-[2px] ' onClick={() => setMenuOpen(!menuOpen)}>
-      
-      {/* <img  src={logo2} alt="logo2" /> */}
-      
+    <button className='hamburger h-[50px] flex justify-end ml-auto mr-5 mt-[-40px] mb-[2px]' onClick={() => setMenuOpen(!menuOpen)}>
       <div className='' onClick={handleClick}>
-      <svg className='max-md:img-4xl' id="svg" width="48" height="39" viewBox="0 0 48 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g style={{ mixBlendMode: "difference" }}>
-          <line ref={line1Ref} x1="0.162234" y1="37.3264" x2="47.3588" y2="37.3266" stroke="black" strokeWidth="1.49342"/>
-          <line ref={line2Ref} x1="0.162234" y1="22.3186" x2="47.3588" y2="22.3188" stroke="black" strokeWidth="1.79342"/>
-        </g>
-      </svg>
-    </div>
+        <svg className='max-md:w-[4rem]' id="svg" width="48" height="39" viewBox="0 0 48 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g style={{ mixBlendMode: "difference" }}>
+            <line ref={line1Ref} x1="0.162234" y1="37.3264" x2="47.3588" y2="37.3266" stroke="black" strokeWidth="1.49342"/>
+            <line ref={line2Ref} x1="0.162234" y1="22.3186" x2="47.3588" y2="22.3188" stroke="black" strokeWidth="1.79342"/>
+          </g>
+        </svg>
+      </div>
     </button>
 
-      
-
-
-      
-
-
-
-      <div className='menuhamburger flex  ml-auto'>
-
-      
-      <ul className='menu-1 flex text-xs justify-end gap-5 mr-40 mt-[-30px] ml-auto'>
-          <li>about Us</li>
-          <li>services</li>
-          <li>work</li>
-          <li>Let's Talk</li>
+    <div className='menuhamburger flex ml-auto'>
+      <ul className='menu-1 flex text-xs justify-end gap-5 mr-10 md:mr-40 mt-[-30px] ml-auto'>
+        <li>about Us</li>
+        <li>services</li>
+        <li>work</li>
+        <li>Let's Talk</li>
       </ul>
-
-      </div>
-      
-
-
     </div>
-    </section>
+
+  </div>
+</section>
+
 
       
     

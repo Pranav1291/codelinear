@@ -5,6 +5,7 @@ import './index.css'
 import Services from'../src/components/Service.jsx'
 import Letstalk from '../src/components/LetsTalk.jsx'
 import Footer from '../src/components/Footer.jsx';
+import '../src/components/Service.css';
 //import 'antd/dist/antd.min.css';
 
 const App = () => {

@@ -3,6 +3,7 @@
   height: 96px;
   display: flex;
   gap: 257.25px;
+  
 }
 .work-head {
   width: 530px;
@@ -13,6 +14,7 @@
   line-height: 96px;
   letter-spacing: 0em;
   text-align: left;
+  margin-left: 20px;
 }
 .work-para {
   width: 540.63px;
@@ -45,6 +47,7 @@
   position: relative;
   top: 74.28px;
   opacity: 1;
+  margin-left: 20px;
 }
 .services-menu {
   width: 100%;
@@ -62,7 +65,7 @@
 }
 .menu-head {
   font-size: 85.66px;
-  margin-left: 42px;
+  margin-left: -100px;
   width: 760px;
   color: #577f3e;
   text-wrap: nowrap;
@@ -70,6 +73,7 @@
   font-family: Sora;
   overflow-x: hidden;
 }
+
 .menu-para {
   width: 260px;
   font-size: 21px;
@@ -95,6 +99,11 @@
   width: 100%;
   height: 700px;
   z-index: 2;
+}
+.circle {
+  margin-top: -5px;
+  
+
 }
 
 @media (max-width: 767px) {
@@ -125,9 +134,10 @@
   .max-2xl\:text-\[100px\] {
     font-size: 100px;
   }
-}
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 100px;
+
+  .service {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+  }
 }
