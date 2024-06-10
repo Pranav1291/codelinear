@@ -50,7 +50,7 @@ const Footer = () => {
                 <div className="relative">
                     <img
                         // ref={imageRef}
-                        className="relative overflow-hidden logo-footer w-full max-w-xs object-cover"
+                        className=" logo-footer w-full max-w-xs object-cover"
                         src={footerLogo}
                         alt="footerlogo"
                     />
