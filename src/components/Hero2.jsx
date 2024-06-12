@@ -273,8 +273,8 @@ const Hero = () => {
   sm:w-[113.0625px] sm:ml-[500px] 
   max-md:w-[135.675px] max-md:ml-[700px] max-lg:mt-[-500px]
   max-lg:w-[150.75px] max-lg:ml-[-500px] 
-  xl:w-[150.75px] xl:ml-[1100px] 
-  2xl:w-[180.9px] 2xl:ml-[1300px]'>
+  max-xl:w-[150.75px] max-xl:ml-[-700px] 
+  max-2xl:w-[180.9px] max-2xl:ml-[1300px]'>
                             <svg ref={circleRef} className='ml-[62.25px]' width="90" height="89" viewBox="0 0 90 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="44.8558" cy="44.4689" r="43.6546" transform="rotate(-90 44.8558 44.4689)" stroke="#131313" /></svg>
 
@@ -310,8 +310,8 @@ const Hero = () => {
 
                 <div className='h-[211.5px] max-sm:h-[50px] max-lg:h-[30px] w-full gap-[6px]  ml-5'>
                     <div className='flex  max-sm:space-x-10 max-md:space-x-[120px] py-[57.75px]  mr-[80.12px]'>
-                        <h1 className='text-[30px] ml-[4.2px] max-sm:text-2xl max-md:text-[30px] max-lg:text-[50px] max-xl:text-[89px]  2xl:text-[96px] w-auto md:w-[430px]'>SERVICES</h1>
-                        <p className=' text-[15px] max-sm:text-[10px] max-md:text-[10px] xl:text-[15px] ml-0 md:ml-[12rem] max-xl:mb-[20px] w-full md:w-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere <br /> laboriosam soluta asperiores magnam neque quo sint dolores</p>
+                        <h1 className='text-[30px] ml-[4.2px] max-sm:text-2xl max-md:text-[30px] max-lg:text-[50px] max-xl:text-[89px] 2xl:text-[96px] w-auto md:w-[430px]'>SERVICES</h1>
+                        <p className=' text-[15px] max-sm:text-[10px] max-sm:mt-[-5px] max-md:text-[10px] max-xl:text-[15px] ml-0 md:ml-[12rem] max-xl:mt-[30px] w-full md:w-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere <br /> laboriosam soluta asperiores magnam neque quo sint dolores</p>
                     </div>
                 </div>
 
@@ -459,8 +459,8 @@ const Hero = () => {
                     slidesPerView={1} // Default to 1 slide per view
                     breakpoints={{
                         640: { slidesPerView: 1 }, // 1.5 slides per view on small screens
-                        768: { slidesPerView: 2 }, // 2 slides per view on medium screens
-                        1024: { slidesPerView: 1.8 }, // 3 slides per view on large screens
+                        768: { slidesPerView: 1 }, // 2 slides per view on medium screens
+                        1024: { slidesPerView: 2 }, // 3 slides per view on large screens
                         1280: { slidesPerView: 2 },
                         1440: { slidesPerView: 2 }  // 4 slides per view on extra large screens
                     }}
