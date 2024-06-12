@@ -241,38 +241,38 @@ const Hero = () => {
         <section className=' '>
             <div className='main-container'>
                 <div className='mt-20 px-4 md:px-10 lg:px-20'>
-                    <h1 className='text-3xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl  leading-tight'>
+                    <h1 className='text-3xl md:text-5xl lg:text-6xl max-md:ml-5 max-md:text-[30px] xl:text-7xl 2xl:text-8xl max-sm:text-2xl leading-tight'>
                         PROPELLING THE <br />WORLD, BY DESIGN.
                     </h1>
                 </div>
 
-                <div className="w-full h-auto mx-auto sm:w-[600px] sm:h-[300px] md:w-[800px] md:h-[400px] lg:w-[1000px] lg:h-[500px] xl:w-[1328px] xl:h-[598px]"></div>
+                <div className="w-full h-auto mx-auto max-sm:w-[600px] max-sm:h-[80px] max-md:h-[150px] md:h-[400px] max-lg:w-[1000px] max-lg:h-[100px] xl:w-[1328px] max-xl:h-[598px]"></div>
 
 
 
                 {/* About Us Section*/}
 
-                <div ref={ref} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className='AMET second-div h-[1272px] py-20'>
+                <div ref={ref} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className=' second-div h-[1272px] max-sm:h-[600px] max-sm:w-screen max-sm:py-2 max-md:h-[800px]  max-lg:h-[850px] py-20'>
                     <div onMouseEnter={handleAbouUsMouseEnter} onMouseLeave={handleAboutUsLeave} className='py-10'>
-                        <h1 className='xl:text-[89px] sm:text-[40px] md:text-[48px] lg:text-[60px] 2xl:text-[89px] leading-tight ml-[42.09px]'>
+                        <h1 className=' max-sm:text-2xl max-sm:ml-7 max-xl:text-[89px] max-lg:text-[150px] md:text-[48px] max-md:text-[30px] 2xl:text-[89px] leading-tight ml-[42.09px]'>
                             AMET MAGNIS DIAM <br />VARIUS VIVERRAAT
                         </h1>
 
-                        <p className='text-[15px] md:text-base lg:text-lg xl:text-[15px] 2xl:text-2xl flex justify-end ml-auto mr-5 md:mr-10 mt-5 md:mt-5'>
+                        <p className='text-[15px]  max-sm:text-[10px] max-sm:mr-[60px] max-lg:mr-[20px] max-md:text-[10px] max-lg:text-[15px] xl:text-[15px] 2xl:text-2xl flex justify-end ml-auto mr-5 md:mr-10 mt-5 md:mt-5'>
                             Lorem ipsum dolor sit amet, <br />consectetur adipisicing elit. <br />Voluptatum, sit. Lorem ipsum dolor sit amet <br />consectetur adipisicing elit. Obcaecati, debitis?
                         </p>
                         <div class="relative">
-                            <img className='mt-[40px] ml-[42.09px] mb-[114.94px] w-[653.25px] max-sm:w-[300px] max-md:w-[400px] max-lg:w-[500px] max-xl:w-[653.25px] max-2xl:w-[700px]' src={image} alt="image" />
+                            <img className='mt-[40px] ml-[42.09px] mb-[114.94px] w-[653.25px] max-sm:w-[300px] max-sm:h-[300px] max-sm:ml-3  max-md:w-[400px] max-lg:w-[420px] max-xl:w-[653.25px] max-2xl:w-[700px]' src={image} alt="image" />
                         </div>
 
 
                         <div className='
-  w-[150.75px] h-[88.5px] mt-[-720.28px] 
-  ml-[1100.31px] max-sm:w-[90.45px] 
-  max-sm:ml-[100px] 
+  w-[200.75px] h-[88.5px] mt-[-720.28px] 
+  ml-[1100.31px] max-sm:w-[60.45px] max-sm:h-[50px] max-sm:mt-[-390px] 
+  max-sm:ml-[430px]    
   sm:w-[113.0625px] sm:ml-[500px] 
-  md:w-[135.675px] md:ml-[700px] 
-  lg:w-[150.75px] lg:ml-[900px] 
+  max-md:w-[135.675px] max-md:ml-[700px] max-lg:mt-[-500px]
+  max-lg:w-[150.75px] max-lg:ml-[-500px] 
   xl:w-[150.75px] xl:ml-[1100px] 
   2xl:w-[180.9px] 2xl:ml-[1300px]'>
                             <svg ref={circleRef} className='ml-[62.25px]' width="90" height="89" viewBox="0 0 90 89" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -308,10 +308,10 @@ const Hero = () => {
 
                 {/* Services section */}
 
-                <div className='h-[211.5px] w-full gap-[6px] ml-5'>
-                    <div className='flex flex-col md:flex-row gap-[1rem] md:gap-[257.25px] h-auto md:h-[96px] ml-[4.2px] py-[57.75px] mr-0 md:mr-[170.12px]'>
-                        <h1 className='text-[30px] md:text-[40px] lg:text-[50px] xl:text-[89px] 2xl:text-[96px] w-auto md:w-[430px]'>SERVICES</h1>
-                        <p className=' text-[15px] md:text-base xl:text-[15px] ml-0 md:ml-[12rem] w-full md:w-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere <br /> laboriosam soluta asperiores magnam neque quo sint dolores</p>
+                <div className='h-[211.5px] max-sm:h-[50px] max-lg:h-[30px] w-full gap-[6px]  ml-5'>
+                    <div className='flex  max-sm:space-x-10 max-md:space-x-[120px] py-[57.75px]  mr-[80.12px]'>
+                        <h1 className='text-[30px] ml-[4.2px] max-sm:text-2xl max-md:text-[30px] max-lg:text-[50px] max-xl:text-[89px]  2xl:text-[96px] w-auto md:w-[430px]'>SERVICES</h1>
+                        <p className=' text-[15px] max-sm:text-[10px] max-md:text-[10px] xl:text-[15px] ml-0 md:ml-[12rem] max-xl:mb-[20px] w-full md:w-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere <br /> laboriosam soluta asperiores magnam neque quo sint dolores</p>
                     </div>
                 </div>
 
@@ -333,9 +333,9 @@ const Hero = () => {
 
                     {/* overflow-x-auto whitespace-nowrap flex space-x-4 */}
 
-                    <div className='h-[873px] w-full'>
+                    <div className='h-[873px]  w-full'>
                         <SwiperSlide>
-                            <div className='flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-[-100px] mt-[190.5px] text-#2C2C2C ml-[56.14px]'>
+                            <div className='flex   max-md:flex-row space-y-4 max-xl:space-x-[5px] max-md:space-y-0 max-md:space-x-[40px] mt-[190.5px] text-#2C2C2C ml-[56.14px]'>
                                 <h1 className='text-[220px] leading-none max-md:text-[100px] max-lg:text-[150px] max-sm:text-[50px] max-xl:text-[220px] max-2xl:text-[300px]'>
                                     CONSULTING <br />AND STRATEGY
                                 </h1>
@@ -360,7 +360,7 @@ const Hero = () => {
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <div className='flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-[-650px] mt-[190.5px]'>
+                            <div className='flex   max-md:flex-row space-y-4 max-xl:space-x-[5px] max-md:space-y-0 max-md:space-x-[40px] mt-[190.5px] text-#2C2C2C ml-[56.14px]'>
                                 <h1 className='text-[220px] leading-none max-md:text-[100px] max-lg:text-[150px] max-sm:text-[50px] max-xl:text-[220px] max-2xl:text-[300px]'>
                                     USER<br />EXPERIENCE
                                 </h1>
@@ -389,11 +389,11 @@ const Hero = () => {
 
 
                         <SwiperSlide>
-                            <div className='flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-[-650px] mt-[190.5px]'>
+                            <div className='flex   max-md:flex-row space-y-4 max-xl:space-x-[5px] max-md:space-y-0 max-md:space-x-[40px] mt-[190.5px] text-#2C2C2C ml-[56.14px]'>
                                 <h1 className='text-[220px] leading-none max-md:text-[100px] max-lg:text-[150px] max-sm:text-[50px] max-xl:text-[220px] max-2xl:text-[300px]'>PRODUCT<br /> DEVELOPMENT</h1>
 
                                 <ul className='leading-loose font-grey-500'>
-                                    <li className='text-[16px] max-md:text-[10.24px] max-lg:text-[12.8px] max-sm:text-[8.192px] max-xl:text-[220px] max-2xl:text-[20px]'>WEBSITE DEVELOPMENT</li>
+                                    <li className='text-[16px] max-md:text-[10px] max-lg:text-[12px] max-sm:text-[8px] max-xl:text-[16px] max-2xl:text-[20px]'>WEBSITE DEVELOPMENT</li>
 
                                     <li className='text-[16px] max-md:text-[10px] max-lg:text-[12px] max-sm:text-[8px] max-xl:text-[16px] max-2xl:text-[20px]'>WEB APP DEVELOPMENT</li>
                                     <li className='text-[16px] max-md:text-[10px] max-lg:text-[12px] max-sm:text-[8px] max-xl:text-[16px] max-2xl:text-[20px]'>E-COMMERCE DEVELOPMENT</li>
@@ -409,7 +409,7 @@ const Hero = () => {
 
 
                         <SwiperSlide>
-                            <div className='flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-[-650px] mt-[190.5px]'>
+                            <div className='flex   max-md:flex-row space-y-4 max-xl:space-x-[50px] max-md:space-y-0 max-md:space-x-[40px] mt-[190.5px] text-#2C2C2C ml-[56.14px]'>
                                 <h1 className='text-[220px] leading-none max-md:text-[100px] max-lg:text-[150px] max-sm:text-[50px] max-xl:text-[220px] max-2xl:text-[300px]'>DIGITAL<br />MARKETING</h1>
                                 <ul className='leading-loose font-grey-500'>
                                     <li className='text-[16px] max-md:text-[10px] max-lg:text-[12px] max-sm:text-[8px] max-xl:text-[16px] max-2xl:text-[20px]'>SEO</li>
@@ -444,10 +444,10 @@ const Hero = () => {
 
 
                 <div className='border-t border-gray-700 flex flex-col md:flex-row items-center ml-5 py-20 mt-20'>
-                    <h1 className=' md:text-[40px] lg:text-[50px] xl:text-[86.43px] 2xl:text-[200px]'>
+                    <h1 className=' max-md:text-[40px] max-lg:text-[50px] max-xl:text-[86.43px] max-2xl:text-[100px]'>
                         PORTFOLIO
                     </h1>
-                    <p className='font-semibold text-s md:text-base lg:text-lg xl:text-xl 2xl:text-2xl px-0 md:px-10 lg:px-20 flex justify-end ml-auto mt-10 md:mt-0'>
+                    <p className='font-semibold text-s max-md:text-[10px] max-md:ml-[15px] max-lg:text-[12px] max-xl:text-[] 2xl:text-2xl px-0 md:px-10 lg:px-20 flex justify-end ml-auto mt-10 md:mt-0'>
                         Lorem ipsum dolor sit amet consectetur<br /> adipisicing elit. Facere laboriosam soluta
                     </p>
                 </div>

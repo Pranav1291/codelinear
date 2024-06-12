@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div className='overflow-x-hidden'>
       <Navbar />
-      {/* <Hero1 /> */}
+      
       <Hero2 />
       <Services />
       <Letstalk />

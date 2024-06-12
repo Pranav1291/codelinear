@@ -19,14 +19,14 @@ const LetsTalk = () => {
 
 
   return (
-    <section className='text-center md:text-left'>
+    <section className='text-center '>
     
-      <div className='text-2xl w-[1440px]-full text-semibold flex justify-center mt-5 h-[4rem]'>
-                <h4 className=''>Wanna Know a Secret ?</h4><br />
+      <div className='text-2xl w-[1440px]-full text-semibold max-sm:text-[20px]  flex justify-center  mt-5 h-[4rem]'>
+                <h4 className='max-sm:py-[20px]'>Wanna Know a Secret ?</h4><br />
 
             </div>
 
-            <div ref={refHeading} onMouseEnter={handleHeadingMouseEnter} onMouseLeave={handleHeadingMouseLeave} className='text-[139.28px] flex justify-center mt-[50px]'>
+            <div ref={refHeading} onMouseEnter={handleHeadingMouseEnter} onMouseLeave={handleHeadingMouseLeave} className='max-sm:text-[80px] text-[139.28px] flex justify-center mt-[50px]'>
                 <h1 className=''>LETS TALK</h1>
             </div>
             <div className='border-t border-grey-500 flex items-center '>
