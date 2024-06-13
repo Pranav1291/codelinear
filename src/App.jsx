@@ -6,6 +6,7 @@ import Services from'../src/components/Service.jsx'
 import Letstalk from '../src/components/LetsTalk.jsx'
 import Footer from '../src/components/Footer.jsx';
 import '../src/components/Service.css';
+import Animated from '../src/components/AnimatedText.jsx';
 //import 'antd/dist/antd.min.css';
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
       <Services />
       <Letstalk />
       <Footer />
+      {/* <Animated /> */}
       
     </div>
   )

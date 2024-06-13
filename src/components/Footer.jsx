@@ -1,19 +1,42 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import footerLogo from '../assets/Frame 513.svg';
 import Rights from '../assets/© Codelinear 2023. All Rights Reserved..png';
 import footer from '../assets/Frame 218.svg';
+import gsap from 'gsap';
 
 const Footer = () => {
+
+    const logoRef = useRef(null);
+    const textRef = useRef(null);
+
+    useEffect(() => {
+        const logo = logoRef.current;
+        const text = textRef.current;
+
+        // GSAP animation
+        gsap.timeline({ repeat: -1 }) // Repeat infinitely
+            .to(logo, { scale: 1.5, duration: 0.5, delay: 3, x: -60, ease: "none" })
+            .to(text, { opacity: 1, duration: 0.1, x:-1 }, "-=0.2") // Show text when zoomed in
+            .to(logo, { scale: 1, duration: 0.5, delay: 3, x: 0, ease: "none" })
+            .to(text, { opacity: -2, duration: 0.1, x:0 }, "-=0.2"); // Hide text when zoomed out
+
+    }, []);
 
     return (
         <section className='text-center '>
             <div className='' >
-                <div className='h-[120.25px] ml-5 overflow-hidden relative '>
+                <div className='h-[120.25px] ml-5  '>
 
-                    <div className='animate-zoomInOut'><img className='block logo-footer w-[169.5px] h-[60.75px] max-sm:ml-[90px]' src={footerLogo} alt="footerlogo" />
-                    <div className='ml-[-300px] absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none animate-fadeInOut'>to impact</div></div>
+                    <div className='overflow-hidden   ml-5' style={{ display: 'flex', flexDirection: 'column' }}>
+                        <div ref={logoRef} className='w-[100px] h-[60.71px] bg-footer-logo bg-no-repeat' >
+                            <p className='w-[100px]  mt-[25.5px] text-[19px] overflow-hidden ml-[100.5px] ' ref={textRef} style={{ opacity: 0,  transition: 'opacity 0.2s' }}>to impact</p>
+                        </div>
+                        {/* <div className='' ref={textRef} style={{ opacity: 0, marginTop: '10px', transition: 'opacity 0.1s' }}>
+        to impact
+      </div> */}
+                    </div>
 
-                    <div className='mt-[30px] '><img className=' w-[237px] h-[15px] max-sm:h-[10px] max-sm:w-[150px] max-sm:ml-[60px] ' src={Rights} alt="rightsfooter" /></div>
+                    <div className='mt-[30px] '><img className=' w-[237px] h-[15px] max-sm:h-[12px] max-sm:mb-[0px] sm:mt-[10px] max-sm:mt-[20px] max-sm:w-[150px] max-sm:ml-[60px] ' src={Rights} alt="rightsfooter" /></div>
 
                     <div className='flex justify-end mr-10 mt-[-70px] max-sm:mt-[-40px] max-md:mt-[40px]'><img src={footer} alt="footer" /></div>
 

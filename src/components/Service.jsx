@@ -210,7 +210,7 @@ export default function Work() {
     >
       <div className="service ">
         <div className="work-content ">
-          <h1 className="work-head">INDUSTRIES WE SERVED</h1>
+          <h1 className="work-head ">INDUSTRIES WE SERVED</h1>
           <p className="work-para  ">
             Id donec rutrum mauris venenatis ac. Id metus lorem mus sit magna
             varius cum proin. Accumsan volutpat natoque purus pellentesque nec

@@ -106,14 +106,10 @@
 
 }
 
-@media (max-width: 767px) {
-  .max-sm\:text-\[56px\] {
-    font-size: 56px;
-  }
-}
+
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .max-md\:text-\[64px\] {
+  .max-md\:.work-head.text-\[64px\] {
     font-size: 64px;
   }
 }
