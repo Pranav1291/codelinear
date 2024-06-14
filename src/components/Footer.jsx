@@ -29,7 +29,7 @@ const Footer = () => {
 
                     <div className='overflow-hidden   ml-5' style={{ display: 'flex', flexDirection: 'column' }}>
                         <div ref={logoRef} className='w-[100px] h-[60.71px] bg-footer-logo bg-no-repeat' >
-                            <p className='w-[100px]  mt-[25.5px] text-[19px] overflow-hidden ml-[100.5px] ' ref={textRef} style={{ opacity: 0,  transition: 'opacity 0.2s' }}>to impact</p>
+                            <p className='w-[105px] h-[80px]  mt-[24.5px] text-black text-[20px] font-extra-medium overflow-hidden ml-[101px] ' ref={textRef} style={{ opacity: 0,  transition: 'opacity 0.2s' }}>to impact</p>
                         </div>
                         {/* <div className='' ref={textRef} style={{ opacity: 0, marginTop: '10px', transition: 'opacity 0.1s' }}>
         to impact

@@ -8,8 +8,15 @@ export default {
     extend: {
       backgroundImage: {
         'footer-logo' : "url('/src/assets/Frame 513.svg')",
-      }
+      
+      fontWeight: {
+        'extra-medium' : 470,
+
+      
+       
     }
+  }
+  }
   },
   plugins: [],
 };
