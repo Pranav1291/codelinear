@@ -7,7 +7,7 @@ import image from '../assets/Frame 567.svg'
 
 import image4 from '../assets/pexels-anh-khac-6318739 1.png';
 import image5 from '../assets/pexels-deva-darshan-1173777 1.png';
-import image6 from '../assets/Frame 20.png';
+import image6 from '../assets/companiesname.svg';
 import cloth from '../assets/iStock-182864957 2.png';
 import bull from '../assets/iStock-1223076208 1.png';
 import phone from '../assets/Frame 1000001741.png';
@@ -241,7 +241,7 @@ const Hero = () => {
         <section className=' '>
             <div className='main-container'>
                 <div className='mt-20 px-4 md:px-10 lg:px-20'>
-                    <h1 className='text-3xl max-sm:ml-2 md:text-5xl lg:text-6xl max-md:ml-5 max-md:text-[30px] xl:text-7xl 2xl:text-8xl max-sm:text-2xl leading-tight'>
+                    <h1 className='text-3xl max-sm:ml-2 md:text-5xl lg:text-6xl max-md:ml-5 max-md:text-[30px] xl:ml-[4.2px] xl:mt-[175.5px] xl:text-[89px] 2xl:text-8xl max-sm:text-2xl leading-tight'>
                         PROPELLING THE <br />WORLD, BY DESIGN.
                     </h1>
                 </div>
@@ -254,11 +254,11 @@ const Hero = () => {
 
                 <div ref={ref} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className=' second-div h-[1272px] max-sm:h-[600px] max-sm:w-screen sm:w-screen max-sm:py-2 max-md:h-[800px]  max-lg:h-[850px] py-20'>
                     <div onMouseEnter={handleAbouUsMouseEnter} onMouseLeave={handleAboutUsLeave} className='py-10'>
-                        <h1 className=' max-sm:text-2xl max-sm:ml-5 max-xl:text-[89px] max-lg:text-[150px] md:text-[48px] max-md:text-[30px] 2xl:text-[89px] leading-tight ml-[42.09px]'>
+                        <h1 className=' max-sm:text-2xl max-sm:ml-5 max-xl:text-[89px] max-lg:text-[150px] md:text-[48px] max-md:text-[30px] xl:text-[89px] 2xl:text-[89px] leading-tight ml-[42.09px]'>
                             AMET MAGNIS DIAM <br />VARIUS VIVERRAAT
                         </h1>
 
-                        <p className='text-[15px]  max-sm:text-[10px] lg:mr-[140px] max-sm:mr-[45px] max-lg:mr-[20px] max-md:text-[10px] max-lg:text-[15px] xl:text-[15px] 2xl:text-2xl flex justify-end ml-auto mr-5 md:mr-10 mt-5 md:mt-5'>
+                        <p className='text-[15px]  max-sm:text-[10px] lg:mr-[140px] max-sm:mr-[45px] max-lg:mr-[20px] max-md:text-[10px] max-lg:text-[15px] xl:mr-[230px] xl:text-[15px] 2xl:text-2xl flex justify-end ml-auto mr-5 md:mr-10 mt-5 md:mt-5'>
                             Lorem ipsum dolor sit amet, <br />consectetur adipisicing elit. <br />Voluptatum, sit. Lorem ipsum dolor sit amet <br />consectetur adipisicing elit. Obcaecati, debitis?
                         </p>
                         <div class="relative">
@@ -273,7 +273,7 @@ const Hero = () => {
   sm:w-[113.0625px]  max-sm:ml-[350px] sm:ml-[450px] md:ml-[500px] 
   max-md:w-[100.675px] max-md:ml-[700px] md:mr-[-100px] max-lg:mt-[-500px]
   max-lg:w-[200.75px] max-lg:ml-[-500px] lg:ml-[850px] lg:mt-[-780px]
-  max-xl:w-[150.75px] max-xl:ml-[-700px] xl:ml-[1000px] min-xl:mb[-500px]
+  max-xl:w-[150.75px] max-xl:ml-[-700px] xl:ml-[1100px] min-xl:mb[-500px]
   max-2xl:w-[180.9px] max-2xl:ml-[1300px]'>
                             <svg ref={circleRef} className='ml-[62.25px]' width="90" height="89" viewBox="0 0 90 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="44.8558" cy="44.4689" r="43.6546" transform="rotate(-90 44.8558 44.4689)" stroke="#131313" /></svg>
@@ -310,8 +310,8 @@ const Hero = () => {
 
                 <div className='h-[211.5px] max-sm:h-[50px] max-lg:h-[30px] w-full gap-[6px]   ml-5'>
                     <div className='flex  max-sm:space-x-10 max-md:space-x-[120px] py-[57.75px] max-sm:flex-col  mr-[80.12px]'>
-                        <h1 className='text-[30px] ml-[4.2px] max-sm:text-2xl max-md:text-[30px] max-lg:text-[50px] max-xl:text-[89px] 2xl:text-[96px] w-auto md:w-[430px] '>SERVICES</h1>
-                        <p className=' text-[15px] max-sm:text-[10px] sm:ml-[20px] max-sm:mt-[-2px] max-md:mt-[7px] max-md:text-[10px] md:text-[10px] md:mt-[5px] lg:text-[18px]  max-xl:text-[15px] ml-0 md:ml-[12rem] max-xl:mt-[30px] w-full md:w-auto xl:mt-[25px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere <br /> laboriosam soluta asperiores magnam neque quo sint dolores</p>
+                        <h1 className='text-[30px] ml-[4.2px] max-sm:text-2xl max-md:text-[30px] xl:ml-[42px] xl:text-[86.43px] max-lg:text-[50px] max-xl:text-[89px] 2xl:text-[96px] w-auto md:w-[430px] '>SERVICES</h1>
+                        <p className=' text-[15px] max-sm:text-[10px] sm:ml-[20px] max-sm:mt-[-2px] max-md:mt-[7px] max-md:text-[10px] md:text-[10px] md:mt-[5px] lg:text-[15px]  max-xl:text-[15px] ml-0 md:ml-[12rem] max-xl:mt-[30px] w-full md:w-auto xl:mt-[25px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere <br /> laboriosam soluta asperiores magnam neque quo sint dolores</p>
                     </div>
                 </div>
 
@@ -447,13 +447,13 @@ const Hero = () => {
 
 
 
-
+              {/* PORTFOLIO SECTION */}
 
                 <div className='border-t border-gray-700 flex flex-col md:flex-row items-center ml-5 py-20 mt-20'>
-                    <h1 className=' max-md:text-[40px] max-lg:text-[50px] max-xl:text-[86.43px] max-2xl:text-[100px]'>
+                    <h1 className=' max-md:text-[40px] max-lg:text-[50px] xl:ml-[42px] xl:text-[86.43px] max-xl:text-[86.43px] max-2xl:text-[100px]'>
                         PORTFOLIO
                     </h1>
-                    <p className='font-semibold text-s max-md:text-[10px] max-md:ml-[15px] max-lg:text-[12px] max-xl:text-[] 2xl:text-2xl px-0 md:px-10 lg:px-20 flex justify-end ml-auto mt-10 md:mt-0'>
+                    <p className='font-semibold text-s max-md:text-[10px] max-md:ml-[15px] max-lg:text-[12px] xl:text-[15px] xl:mr-[171.37px] 2xl:text-2xl px-0 md:px-10 lg:px-20 flex justify-end ml-auto mt-10 md:mt-0'>
                         Lorem ipsum dolor sit amet consectetur<br /> adipisicing elit. Facere laboriosam soluta
                     </p>
                 </div>
@@ -461,8 +461,8 @@ const Hero = () => {
 
                 <Swiper
                     direction="horizontal"
-                    spaceBetween={50}
-                    slidesPerView={1} // Default to 1 slide per view
+                    spaceBetween={0}
+                    //slidesPerView={1} // Default to 1 slide per view
                     breakpoints={{
                         640: { slidesPerView: 1 }, // 1.5 slides per view on small screens
                         768: { slidesPerView: 1 }, // 2 slides per view on medium screens
@@ -470,49 +470,50 @@ const Hero = () => {
                         1280: { slidesPerView: 2 },
                         1440: { slidesPerView: 2 }  // 4 slides per view on extra large screens
                     }}
-                    mousewheel={{ releaseOnEdges: true, sensitivity: 0.5 }}
+                    mousewheel={{ releaseOnEdges: true, sensitivity: 1 }}
                     modules={[Mousewheel]}
                     draggable={true}
+                    freeMode={true}
                 >
                     <div className='h-[719px] w-full mx-auto'>
-                        <SwiperSlide className='ml-5'>
+                        <SwiperSlide className='ml-[42px]'>
                             <img src={image4} alt="MANGO" className='w-full h-auto' />
-                            <h3 className='mt-2 font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>MANGO</h3>
+                            <h3 className='mt-2 flex items-start font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>MANGO</h3>
                         </SwiperSlide>
 
-                        <SwiperSlide className='ml-5'>
+                        <SwiperSlide className='ml-[30.75px]'>
                             <img src={image5} alt="COWBOY" className='w-full h-auto' />
-                            <h3 className='mt-2 font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>COWBOY</h3>
+                            <h3 className='mt-2 flex items-start font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>COWBOY</h3>
                         </SwiperSlide>
 
-                        <SwiperSlide className='ml-5'>
+                        <SwiperSlide className='ml-[30.75px]'>
                             <img src={cloth} alt="TRADEJINI" className='w-full h-auto' />
-                            <h3 className='mt-2 font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>TRADEJINI</h3>
+                            <h3 className='mt-2 flex items-start font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>TRADEJINI</h3>
                         </SwiperSlide>
 
-                        <SwiperSlide className='ml-5'>
+                        <SwiperSlide className='ml-[30.75px]'>
                             <img src={bull} alt="KLUBB" className='w-full h-auto' />
-                            <h3 className='mt-2 font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>KLUBB</h3>
+                            <h3 className='mt-2 flex items-start font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>KLUBB</h3>
                         </SwiperSlide>
 
-                        <SwiperSlide className='ml-5'>
+                        <SwiperSlide className='ml-[30.75px]'>
                             <img src={phone} alt="IKEA" className='w-full h-auto' />
-                            <h3 className='mt-2 font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>IKEA</h3>
+                            <h3 className='mt-2  flex items-start font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>IKEA</h3>
                         </SwiperSlide>
 
-                        <SwiperSlide className='ml-5'>
+                        <SwiperSlide className='ml-[30.75px]'>
                             <img src={table} alt="WILLIAM ABRAHAM" className='w-full h-auto' />
-                            <h3 className='mt-2 font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>WILLIAM ABRAHAM</h3>
+                            <h3 className='mt-2 flex items-start font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>WILLIAM ABRAHAM</h3>
                         </SwiperSlide>
 
-                        <SwiperSlide className='ml-5'>
+                        <SwiperSlide className='ml-[30.75px]'>
                             <img src={socks} alt="VUORI" className='w-full h-auto' />
-                            <h3 className='mt-2 font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>VUORI</h3>
+                            <h3 className='mt-2 flex items-start font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>VUORI</h3>
                         </SwiperSlide>
 
-                        <SwiperSlide className='ml-5'>
+                        <SwiperSlide className='ml-[30.75px]'>
                             <img src={girl} alt="GIRL" className='w-full h-auto' />
-                            <h3 className='mt-2 font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>GIRL</h3>
+                            <h3 className='mt-2 flex items-start font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>GIRL</h3>
                         </SwiperSlide>
                     </div>
                 </Swiper>

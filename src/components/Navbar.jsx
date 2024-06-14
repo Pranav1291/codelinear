@@ -57,11 +57,11 @@ const Navbar = () => {
     <section className='nav-container '>
   <div className='h-[65.97px] sticky top-0   '>
 
-    <img className='ml-[55px] w-[99.36px] h-[45.71px]  max-sm:w-[60px] max-md:ml-5 max-md:w-[90px] max-lg:w-[99px] max-xl:ml-5 max-xl:w-[99.36px] max-2xl:w-[200px]' src={logo} alt="Nothing" />
+    <img className='ml-[55px] w-[99.36px] h-[45.71px]  max-sm:w-[60px] max-md:ml-5 max-md:w-[90px] max-lg:w-[99px] xl:ml-[55px] xl:h-[45.71px] max-xl:ml-[55px] max-xl:w-[99.36px] max-2xl:w-[200px]' src={logo} alt="Nothing" />
 
     <button className='hamburger h-[50px] flex justify-end ml-auto mr-[100px] mt-[-40px] mb-[2px] ' onClick={() => setMenuOpen(!menuOpen)}>
       <div className='' onClick={handleClick}>
-        <svg className='max-md:w-[2.5rem] max-lg:w-[70px] max-sm:ml-[250px] max-sm:h-[25px]' id="svg" width="48" height="39" viewBox="0 0 48 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className='max-md:w-[2.5rem] xl:mr-[26.95px] max-lg:w-[70px] max-sm:ml-[250px] max-sm:h-[25px]' id="svg" width="48" height="39" viewBox="0 0 48 39" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g style={{ mixBlendMode: "difference" }}>
             <line ref={line1Ref} x1="0.162234" y1="37.3264" x2="47.3588" y2="37.3266" stroke="black" strokeWidth="1.49342"/>
             <line ref={line2Ref} x1="0.162234" y1="22.3186" x2="47.3588" y2="22.3188" stroke="black" strokeWidth="1.79342"/>

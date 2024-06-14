@@ -106,10 +106,30 @@
 
 }
 
+@media (max-width: 640px) {
+  .work-head {
+    font-size: 1.5rem;
+    
+  }
+  .services-section {
+    margin-top: -200px;
+  }
+  .serviceimage{
+    height: 350px;
+    width: 350px;
+    margin-left: -1px;
+    margin-top: -130px;
+  }
+  .menuitems{
+    margin-top: 10px;
+    font-size: 15px;
+  }
+}
+
 
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .max-md\:.work-head.text-\[64px\] {
+  .work-head {
     font-size: 64px;
   }
 }
