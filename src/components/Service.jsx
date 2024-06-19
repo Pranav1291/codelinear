@@ -1,6 +1,6 @@
 import "./Service.css";
 import { gsap } from "gsap/gsap-core";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import arrow from "/src/assets/arrow.svg";
 import circle from '/src/assets/Ellipse 1.svg';
 import serviceimage from "/src/assets/glass (1).png";
@@ -42,6 +42,30 @@ export default function Work() {
   const menupara7 = useRef(null);
   const menulist7 = useRef(null);
   const menuitems7 = useRef(null);
+  const mobileView = useRef(null);
+  
+
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+    const handleChange = () => {
+        if (mediaQuery.matches) {
+            gsap.to(about.current, {
+                background: 'conic-gradient(from 193.23deg at 35.28% 47.29%, #386128 0deg, #BCC66F 50.44deg, #386128 360deg)',
+                color: 'white',
+                duration: 0.5
+            });
+        } 
+    };
+
+    handleChange(); // Initial check
+    mediaQuery.addListener(handleChange); // Add listener to media query
+
+    return () => {
+        mediaQuery.removeListener(handleChange); // Cleanup listener on unmount
+    };
+}, []);
 
   const animate = () => {
     gsap.to(about.current, {
@@ -201,6 +225,8 @@ export default function Work() {
     gsap.to(menuitems7.current, { background: "transparent" });
   };
 
+  
+
   return (
     <section
       className="services-section  "
@@ -208,10 +234,10 @@ export default function Work() {
       onMouseEnter={animate}
       onMouseLeave={animateout}
     >
-      <div className="service ">
+      <div  className="service ">
         <div className="work-content ">
           <h1 className="work-head ">INDUSTRIES WE SERVED</h1>
-          <p className="work-para  ">
+          <p className="work-para">
             Id donec rutrum mauris venenatis ac. Id metus lorem mus sit magna
             varius cum proin. Accumsan volutpat natoque purus pellentesque nec
             ac nulla turpis consectetur. Fermentum ut non commodo lacus enim.
@@ -220,10 +246,10 @@ export default function Work() {
         <div className="services-button ">
           <p className="about-button-content">SERVICES</p>
           <div className="arrow-div" ref={arrowanimate}>
-            
+
             <img src={arrow} alt="" className="arrow" ref={arrow1} />
           </div>
-          <img src={circle} alt="" className="circle" ref={arrowanimate}/>
+          <img src={circle} alt="" className="circle" ref={arrowanimate} />
         </div>
         <div className="">
           <img src={serviceimage} alt="" className="serviceimage" ref={serv} />
@@ -234,12 +260,12 @@ export default function Work() {
           onMouseLeave={appear}
         >
           <div
-            className="menuitems mt-[-150px] overflow-hidden"
+            className="menuitems  "
             onMouseEnter={hover}
             onMouseLeave={unhover}
             ref={menuitems}
           >
-            <h1 className="menu-head" ref={menuhead}>
+            <h1 className="menu-head " ref={menuhead}>
               FINTECH
             </h1>
             <p className="menu-para" ref={menupara}>
@@ -264,7 +290,7 @@ export default function Work() {
             <h1 className="menu-head " ref={menuhead1}>
               TECHNOLOGY
             </h1>
-            <p className="menu-para" ref={menupara1}>
+            <p className="menu-para " ref={menupara1}>
               TECHNOLOGY
             </p>
             <p className="menu-list" ref={menulist1}>

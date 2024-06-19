@@ -54,8 +54,8 @@ const Navbar = () => {
   return (
     
 
-    <section className='nav-container '>
-  <div className='h-[65.97px] sticky top-0   '>
+    <section className='nav-container sticky top-0'>
+  <div className='h-[65.97px]    '>
 
     <img className='ml-[55px] w-[99.36px] h-[45.71px]  max-sm:w-[60px] max-md:ml-5 max-md:w-[90px] max-lg:w-[99px] xl:ml-[55px] xl:h-[45.71px] max-xl:ml-[55px] max-xl:w-[99.36px] max-2xl:w-[200px]' src={logo} alt="Nothing" />
 

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 
 
@@ -15,6 +15,25 @@ const LetsTalk = () => {
     const handleHeadingMouseLeave = () => {
         gsap.to(refHeading.current, { duration: 0.5, opacity: 0, y: 0, });
     }
+
+    useEffect(() => {
+      const mediaQuery = window.matchMedia('(max-width: 768px)');
+  
+      const handleChange = () => {
+        if (mediaQuery.matches) {
+          gsap.to(refHeading.current, { duration: 0.5, opacity: 0.5, y: 0, color: "white", textShadow: "0px 0px 10px rgba(0, 0, 0, 0.5)" });
+        }else{
+          gsap.to(refHeading.current, { duration: 0.5, opacity: 0});
+        }
+      };
+  
+      handleChange(); // Initial check
+      mediaQuery.addListener(handleChange); // Add listener to media query
+  
+      return () => {
+        mediaQuery.removeListener(handleChange); // Cleanup listener on unmount
+      };
+    }, []);
 
 
 

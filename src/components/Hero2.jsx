@@ -77,6 +77,7 @@ const Hero = () => {
     }
 
     useEffect(() => {
+
         if (isHovered) {
             gsap.to(ref.current, {
                 background: 'linear-gradient(45deg, #D4A381, #46200D)',
@@ -92,6 +93,33 @@ const Hero = () => {
             });
         }
     }, [isHovered]);
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+        const handleChange = () => {
+            if (mediaQuery.matches) {
+                gsap.to(ref.current, {
+                    background: 'linear-gradient(45deg, #D4A381, #46200D)',
+                    color: 'white',
+                    duration: 0.5
+                });
+            } else {
+                gsap.to(ref.current, {
+                    background: 'white',
+                    color: 'black',
+                    duration: 0.5
+                });
+            }
+        };
+
+        handleChange(); // Initial check
+        mediaQuery.addListener(handleChange); // Add listener to media query
+
+        return () => {
+            mediaQuery.removeListener(handleChange); // Cleanup listener on unmount
+        };
+    }, []);
 
 
     //for industries wala div
@@ -195,7 +223,7 @@ const Hero = () => {
         gsap.to(rect1Ref.current, {
             x: 18, // Move to the right
             duration: 0.5,
-            // Change fill color
+            transformOrigin: "50% 50%  ",
             stagger: 0.1,
             //color: 'white'
             filter: "invert(100%)"
@@ -215,7 +243,7 @@ const Hero = () => {
             duration: 0.5,
             stroke: "black",
             // fill: "linear-gradient(180deg, #D4A381, #46200D)"
-            filter: "invert(100%)" // Reset stroke color
+            filter: "invert(50%)" // Reset stroke color
         });
 
         gsap.to(rect1Ref.current, {
@@ -228,8 +256,8 @@ const Hero = () => {
 
 
         gsap.to(aboutUsRef, {
-            filter: "invert(100%)"
-            // color: 'black'
+            filter: "invert(100%)",
+            color: 'black'
         })
     };
 
@@ -254,11 +282,11 @@ const Hero = () => {
 
                 <div ref={ref} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className=' second-div h-[1272px] max-sm:h-[600px] max-sm:w-screen sm:w-screen max-sm:py-2 max-md:h-[800px]  max-lg:h-[850px] py-20'>
                     <div onMouseEnter={handleAbouUsMouseEnter} onMouseLeave={handleAboutUsLeave} className='py-10'>
-                        <h1 className=' max-sm:text-2xl max-sm:ml-5 max-xl:text-[89px] max-lg:text-[150px] md:text-[48px] max-md:text-[30px] xl:text-[89px] 2xl:text-[89px] leading-tight ml-[42.09px]'>
+                        <h1 className=' max-sm:text-2xl   max-sm:ml-6 max-xl:text-[89px] max-lg:text-[150px] md:text-[48px] max-md:text-[30px] xl:text-[89px] 2xl:text-[89px] leading-tight ml-[42.09px]'>
                             AMET MAGNIS DIAM <br />VARIUS VIVERRAAT
                         </h1>
 
-                        <p className='text-[15px]  max-sm:text-[10px] lg:mr-[140px] max-sm:mr-[45px] max-lg:mr-[20px] max-md:text-[10px] max-lg:text-[15px] xl:mr-[230px] xl:text-[15px] 2xl:text-2xl flex justify-end ml-auto mr-5 md:mr-10 mt-5 md:mt-5'>
+                        <p className='text-[15px]  max-sm:text-[10px] lg:mr-[140px] max-sm:mr-[45px] max-lg:mr-[20px] max-md:text-[10px] max-lg:text-[15px] xl:mr-[230px] xl:text-[15px] 2xl:mt-2 2xl:text-2xl flex justify-end ml-auto mr-5 md:mr-10 mt-5 md:mt-5'>
                             Lorem ipsum dolor sit amet, <br />consectetur adipisicing elit. <br />Voluptatum, sit. Lorem ipsum dolor sit amet <br />consectetur adipisicing elit. Obcaecati, debitis?
                         </p>
                         <div class="relative">
@@ -274,6 +302,7 @@ const Hero = () => {
   max-md:w-[100.675px] max-md:ml-[700px] md:mr-[-100px] max-lg:mt-[-500px]
   max-lg:w-[200.75px] max-lg:ml-[-500px] lg:ml-[850px] lg:mt-[-780px]
   max-xl:w-[150.75px] max-xl:ml-[-700px] xl:ml-[1100px] min-xl:mb[-500px]
+  2xl:ml-[1550px] 
   max-2xl:w-[180.9px] max-2xl:ml-[1300px]'>
                             <svg ref={circleRef} className='ml-[62.25px]' width="90" height="89" viewBox="0 0 90 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="44.8558" cy="44.4689" r="43.6546" transform="rotate(-90 44.8558 44.4689)" stroke="#131313" /></svg>
@@ -309,9 +338,9 @@ const Hero = () => {
                 {/* Services section */}
 
                 <div className='h-[211.5px] max-sm:h-[50px] max-lg:h-[30px] w-full gap-[6px]   ml-5'>
-                    <div className='flex  max-sm:space-x-10 max-md:space-x-[120px] py-[57.75px] max-sm:flex-col  mr-[80.12px]'>
+                    <div className='flex  max-sm:space-x-2 max-md:space-x-[120px] py-[57.75px] max-sm:flex-col  mr-[80.12px]'>
                         <h1 className='text-[30px] ml-[4.2px] max-sm:text-2xl max-md:text-[30px] xl:ml-[42px] xl:text-[86.43px] max-lg:text-[50px] max-xl:text-[89px] 2xl:text-[96px] w-auto md:w-[430px] '>SERVICES</h1>
-                        <p className=' text-[15px] max-sm:text-[10px] sm:ml-[20px] max-sm:mt-[-2px] max-md:mt-[7px] max-md:text-[10px] md:text-[10px] md:mt-[5px] lg:text-[15px]  max-xl:text-[15px] ml-0 md:ml-[12rem] max-xl:mt-[30px] w-full md:w-auto xl:mt-[25px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere <br /> laboriosam soluta asperiores magnam neque quo sint dolores</p>
+                        <p className=' text-[15px] max-sm:text-[10px] sm:mr-[50px] max-sm:mt-[10px] max-md:mt-[7px] max-md:text-[10px] md:text-[10px] md:mt-[5px] lg:text-[15px]  max-xl:text-[15px] ml-0 md:ml-[12rem] max-xl:mt-[30px] w-full md:w-auto xl:mt-[25px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere <br /> laboriosam soluta asperiores magnam neque quo sint dolores</p>
                     </div>
                 </div>
 
@@ -449,11 +478,11 @@ const Hero = () => {
 
               {/* PORTFOLIO SECTION */}
 
-                <div className='border-t border-gray-700 flex flex-col md:flex-row items-center ml-5 py-20 mt-20'>
-                    <h1 className=' max-md:text-[40px] max-lg:text-[50px] xl:ml-[42px] xl:text-[86.43px] max-xl:text-[86.43px] max-2xl:text-[100px]'>
+                <div className=' flex flex-col  md:flex-row  ml-5 py-20 mt-20'>
+                    <h1 className=' max-md:text-[40px] sm:ml-[-10px] max-lg:text-[50px] xl:ml-[42px] xl:text-[86.43px] max-xl:text-[86.43px] max-2xl:text-[100px]'>
                         PORTFOLIO
                     </h1>
-                    <p className='font-semibold text-s max-md:text-[10px] max-md:ml-[15px] max-lg:text-[12px] xl:text-[15px] xl:mr-[171.37px] 2xl:text-2xl px-0 md:px-10 lg:px-20 flex justify-end ml-auto mt-10 md:mt-0'>
+                    <p className='font-semibold text-s  max-md:text-[10px] md:mt-[10px]  max-md:ml-[20px] max-lg:text-[12px] xl:text-[15px] xl:mr-[171.37px] 2xl:text-2xl px-0 md:px-10 lg:px-20 flex justify-end ml-auto mt-10 md:mt-0'>
                         Lorem ipsum dolor sit amet consectetur<br /> adipisicing elit. Facere laboriosam soluta
                     </p>
                 </div>
@@ -464,19 +493,20 @@ const Hero = () => {
                     spaceBetween={0}
                     //slidesPerView={1} // Default to 1 slide per view
                     breakpoints={{
+                        320: { slidesPerView: 1 },
                         640: { slidesPerView: 1 }, // 1.5 slides per view on small screens
                         768: { slidesPerView: 1 }, // 2 slides per view on medium screens
                         1024: { slidesPerView: 2 }, // 3 slides per view on large screens
                         1280: { slidesPerView: 2 },
-                        1440: { slidesPerView: 2 }  // 4 slides per view on extra large screens
+                        1440: { slidesPerView: 2 },  // 4 slides per view on extra large screens
                     }}
                     mousewheel={{ releaseOnEdges: true, sensitivity: 1 }}
                     modules={[Mousewheel]}
                     draggable={true}
                     freeMode={true}
                 >
-                    <div className='h-[719px] w-full mx-auto'>
-                        <SwiperSlide className='ml-[42px]'>
+                    <div className='h-[719px]  w-full mx-auto'>
+                        <SwiperSlide className='ml-[42px] sm:ml-[20px]'>
                             <img src={image4} alt="MANGO" className='w-full h-auto' />
                             <h3 className='mt-2 flex items-start font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>MANGO</h3>
                         </SwiperSlide>
