@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 
 
-import image from '../assets/Frame 567.svg'
+import image from '../assets/Frame 567.svg';
 // import image2 from '../assets/Frame 461.svg';
 
 
@@ -478,11 +478,11 @@ const Hero = () => {
 
               {/* PORTFOLIO SECTION */}
 
-                <div className=' flex flex-col  md:flex-row  ml-5 py-20 mt-20'>
-                    <h1 className=' max-md:text-[40px] sm:ml-[-10px] max-lg:text-[50px] xl:ml-[42px] xl:text-[86.43px] max-xl:text-[86.43px] max-2xl:text-[100px]'>
+                <div className=' flex flex-col max-sm:mt-0 md:flex-row  ml-5 py-20 mt-20'>
+                    <h1 className=' max-md:text-[40px]  max-sm:ml-[5px] max-lg:text-[50px] xl:ml-[42px] xl:text-[86.43px] max-xl:text-[86.43px] max-2xl:text-[100px]'>
                         PORTFOLIO
                     </h1>
-                    <p className='font-semibold text-s  max-md:text-[10px] md:mt-[10px]  max-md:ml-[20px] max-lg:text-[12px] xl:text-[15px] xl:mr-[171.37px] 2xl:text-2xl px-0 md:px-10 lg:px-20 flex justify-end ml-auto mt-10 md:mt-0'>
+                    <p className='font-semibold text-s max-sm:mr-[80px] max-sm:mt-0 max-md:text-[10px] md:mt-[10px]  max-md:ml-[20px] max-lg:text-[12px] xl:text-[15px] xl:mr-[171.37px] 2xl:text-2xl px-0 md:px-10 lg:px-20 flex justify-end ml-auto mt-10 '>
                         Lorem ipsum dolor sit amet consectetur<br /> adipisicing elit. Facere laboriosam soluta
                     </p>
                 </div>
@@ -490,15 +490,17 @@ const Hero = () => {
 
                 <Swiper
                     direction="horizontal"
-                    spaceBetween={0}
-                    //slidesPerView={1} // Default to 1 slide per view
+                    // spaceBetween={0}
+                    // slidesPerView={0} // Default to 1 slide per view
                     breakpoints={{
                         320: { slidesPerView: 1 },
                         640: { slidesPerView: 1 }, // 1.5 slides per view on small screens
-                        768: { slidesPerView: 1 }, // 2 slides per view on medium screens
-                        1024: { slidesPerView: 2 }, // 3 slides per view on large screens
-                        1280: { slidesPerView: 2 },
-                        1440: { slidesPerView: 2 },  // 4 slides per view on extra large screens
+                        768: { slidesPerView: 1.5 }, // 2 slides per view on medium screens
+                        1024: { slidesPerView: 1.8, spaceBetween: 20 }, // 3 slides per view on large screens
+                        1280: { slidesPerView: 2.1, spaceBetween: 20 },
+                        1440: { slidesPerView: 2.1, spaceBetween: 10 },
+                        1536: { slidesPerView: 2.1, spaceBetween: 10 }
+                          // 4 slides per view on extra large screens
                     }}
                     mousewheel={{ releaseOnEdges: true, sensitivity: 1 }}
                     modules={[Mousewheel]}
@@ -506,43 +508,43 @@ const Hero = () => {
                     freeMode={true}
                 >
                     <div className='h-[719px]  w-full mx-auto'>
-                        <SwiperSlide className='ml-[42px] sm:ml-[20px]'>
-                            <img src={image4} alt="MANGO" className='w-full h-auto' />
+                        <SwiperSlide className=' ml-[42px] max-sm:ml-3  '>
+                            <img src={image4} alt="MANGO" className=' w-full h-auto max-sm:w-[300px] max-sm:h-[300px] md:w-[500px] md:h-[500px] lg:h-[653px] lg:w-[653px] ' />
                             <h3 className='mt-2 flex items-start font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>MANGO</h3>
                         </SwiperSlide>
 
-                        <SwiperSlide className='ml-[30.75px]'>
-                            <img src={image5} alt="COWBOY" className='w-full h-auto' />
+                        <SwiperSlide className=' '>
+                            <img src={image5} alt="COWBOY" className='w-full h-auto max-sm:w-[300px] max-sm:h-[300px] md:w-[500px] md:h-[500px] lg:h-[653px] lg:w-[653px]' />
                             <h3 className='mt-2 flex items-start font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>COWBOY</h3>
                         </SwiperSlide>
 
-                        <SwiperSlide className='ml-[30.75px]'>
-                            <img src={cloth} alt="TRADEJINI" className='w-full h-auto' />
+                        <SwiperSlide className='  '>
+                            <img src={cloth} alt="TRADEJINI" className='w-full h-auto max-sm:w-[300px] max-sm:h-[300px] md:w-[500px] md:h-[500px] lg:h-[653px] lg:w-[653px]' />
                             <h3 className='mt-2 flex items-start font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>TRADEJINI</h3>
                         </SwiperSlide>
 
-                        <SwiperSlide className='ml-[30.75px]'>
-                            <img src={bull} alt="KLUBB" className='w-full h-auto' />
+                        <SwiperSlide className='  '>
+                            <img src={bull} alt="KLUBB" className='w-full h-auto max-sm:w-[300px] max-sm:h-[300px] md:w-[500px] md:h-[500px] lg:h-[653px] lg:w-[653px]' />
                             <h3 className='mt-2 flex items-start font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>KLUBB</h3>
                         </SwiperSlide>
 
-                        <SwiperSlide className='ml-[30.75px]'>
-                            <img src={phone} alt="IKEA" className='w-full h-auto' />
+                        <SwiperSlide className='  '>
+                            <img src={phone} alt="IKEA" className='w-full h-auto max-sm:w-[300px] max-sm:h-[300px] md:w-[500px] md:h-[500px] lg:h-[653px] lg:w-[653px]' />
                             <h3 className='mt-2  flex items-start font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>IKEA</h3>
                         </SwiperSlide>
 
-                        <SwiperSlide className='ml-[30.75px]'>
-                            <img src={table} alt="WILLIAM ABRAHAM" className='w-full h-auto' />
+                        <SwiperSlide className='  '>
+                            <img src={table} alt="WILLIAM ABRAHAM" className='w-full h-auto max-sm:w-[300px] max-sm:h-[300px] md:w-[500px] md:h-[500px] lg:h-[653px] lg:w-[653px]' />
                             <h3 className='mt-2 flex items-start font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>WILLIAM ABRAHAM</h3>
                         </SwiperSlide>
 
-                        <SwiperSlide className='ml-[30.75px]'>
-                            <img src={socks} alt="VUORI" className='w-full h-auto' />
+                        <SwiperSlide className=' '>
+                            <img src={socks} alt="VUORI" className='w-full h-auto max-sm:w-[300px] max-sm:h-[300px] md:w-[500px] md:h-[500px] lg:h-[653px] lg:w-[653px]' />
                             <h3 className='mt-2 flex items-start font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>VUORI</h3>
                         </SwiperSlide>
 
-                        <SwiperSlide className='ml-[30.75px]'>
-                            <img src={girl} alt="GIRL" className='w-full h-auto' />
+                        <SwiperSlide className=' max-sm:ml-1'>
+                            <img src={girl} alt="GIRL" className='w-full h-auto max-sm:w-[300px] max-sm:h-[300px] md:w-[500px] md:h-[500px] lg:h-[653px] lg:w-[653px]' />
                             <h3 className='mt-2 flex items-start font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>GIRL</h3>
                         </SwiperSlide>
                     </div>
@@ -550,8 +552,8 @@ const Hero = () => {
 
 
 
-                <div className='relative h-[293.25px] sm:h-[200px] md:h-[250px] lg:h-[293.25px] w-full max-w-[1440px] mx-auto'>
-                    <img src={image6} alt="image6" className='absolute inset-0 w-full h-auto' />
+                <div className='relative h-[293.25px]  sm:h-[200px] md:h-[250px] lg:h-[293.25px] w-full max-w-[1440px] mx-auto'>
+                    <img src={image6} alt="image6" className=' w-full h-auto max-sm:w-[250px] max-sm:h-[250px]' />
                 </div>
 
 
