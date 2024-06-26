@@ -114,29 +114,35 @@
 @media (min-width: 320px) and (max-width: 425px) {
   .services-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     height: 1100px;
-    margin-top: -220px;
+    margin-top: -300px;
   }
   .work-head {
     font-size: 25px;
     text-align: center;
   }
   .serviceimage {
-    margin-left: 20px;
+    margin-left: 10px;
+    
                                      
   }
   .menuitems {
+    
     margin-top: -110px;
     overflow-x: hidden;
     display: flex;
+
     flex-direction: column;
     align-items: center;
   }
   .menu-para {
     font-size: 15px;
     text-align: center;
+  }
+  .service {
+    margin-top: -700px;
   }
 }
 
