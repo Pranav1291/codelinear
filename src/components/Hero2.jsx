@@ -122,98 +122,20 @@ const Hero = () => {
     }, []);
 
 
-    //for industries wala div
 
-    // useEffect(() => {
-    //     if (isSecondHovered) {
-    //         gsap.to(refSecond.current, {
-    //             background: 'linear-gradient(45deg, #BCC66F, #517435)',
-    //             color: '#D3DAA7',
-    //             duration: 0.7
-    //         });
-    //     } else {
-    //         gsap.to(refSecond.current, {
-    //             background: 'white',
-    //             color: 'black',
-    //             duration: 1
-    //         });
-    //     }
-    // }, [isSecondHovered]);
-
-
-    // useEffect(() => {
-    //     if (isListHovered) {
-    //         gsap.to(refImage.current, { opacity: 1, duration: 0.5 });
-    //         gsap.to(refList.current, {
-    //             backgroundColor: '#D3DAA7',
-    //             color: 'white',
-    //             duration: 0.5
-    //         });
-    //         gsap.to(refList.current.querySelectorAll('li'), {
-    //             fontSize: '1.5rem',
-    //             duration: 0.3,
-    //             stagger: 0.1
-    //         });
-    //     } else {
-    //         gsap.to(refImage.current, { opacity: 1, duration: 0.5 });
-    //         gsap.to(refList.current, {
-    //             backgroundColor: 'white',
-    //             color: 'black',
-    //             duration: 0.3
-    //         });
-    //         gsap.to(refList.current.querySelectorAll('li'), {
-    //             fontSize: '1rem',
-    //             duration: 0.3,
-    //             stagger: 0.1
-    //         });
-    //     }
-    // }, [isListHovered]);
-
-
-    //for footer logo animation
-
-    // const svgRef = useRef(null);
-    // const textRef = useRef(null);
-
-    // useEffect(() => {
-    //     const timeline = gsap.timeline({ repeat: -1, repeatDelay: 1 });
-
-    //     timeline.to(svgRef.current, {
-    //         scale: 1.5,
-    //         duration: 1,
-    //         transformOrigin: 'center center',
-    //         ease: 'power1.inOut'
-    //     })
-    //         .to(svgRef.current, {
-    //             scale: 1,
-    //             duration: 1,
-    //             transformOrigin: 'center center',
-    //             ease: 'power1.inOut',
-    //             onStart: () => {
-    //                 gsap.to(textRef.current, { opacity: 1, duration: 1 });
-    //             },
-    //             onComplete: () => {
-    //                 gsap.to(textRef.current, { opacity: 0, duration: 1 });
-    //             }
-    //         });
-
-    // }, []);
-
-
-    //About us icon animation
+    
     const circleRef = useRef(null);
     const rect1Ref = useRef(null);
-    // const rect2Ref = useRef(null);
-    // const rect3Ref = useRef(null);
+    
     const aboutUsRef = useRef(null);
 
 
     const handleAbouUsMouseEnter = () => {
         gsap.to(circleRef.current, {
-            scale: 1.1, // Increase size
+            scale: 1.1, 
             duration: 0.5,
             transformOrigin: "50% 50%",
-            //color: "white",
+            
             fill: 'linear-gradient(45deg, #BCC66F, #517435)',
             filter: "invert(100%)"
 
@@ -221,11 +143,11 @@ const Hero = () => {
         });
 
         gsap.to(rect1Ref.current, {
-            x: 18, // Move to the right
+            x: 18, 
             duration: 0.5,
             transformOrigin: "50% 50%  ",
             stagger: 0.1,
-            //color: 'white'
+            color: 'white',
             filter: "invert(100%)"
 
 
@@ -267,7 +189,7 @@ const Hero = () => {
 
     return (
         <section className=' '>
-            <div className='main-container'>
+            <div className='main-container '>
                 <div className='mt-20 px-4 md:px-10 lg:px-20'>
                     <h1 className='text-3xl max-sm:ml-2 md:text-5xl lg:text-6xl max-md:ml-5 max-md:text-[30px] xl:ml-[4.2px] xl:mt-[175.5px] xl:text-[89px] 2xl:text-8xl max-sm:text-2xl leading-tight'>
                         PROPELLING THE <br />WORLD, BY DESIGN.
@@ -290,15 +212,15 @@ const Hero = () => {
                             Lorem ipsum dolor sit amet, <br />consectetur adipisicing elit. <br />Voluptatum, sit. Lorem ipsum dolor sit amet <br />consectetur adipisicing elit. Obcaecati, debitis?
                         </p>
                         <div class="relative">
-                            <img className='mt-[40px] ml-[42.09px] mb-[114.94px] w-[653.25px] max-sm:w-[300px] max-sm:h-[300px] max-sm:ml-3  max-md:w-[400px] max-lg:w-[420px] max-xl:w-[653.25px] max-2xl:w-[700px]' src={image} alt="image" />
+                            <img className='mt-[40px] ml-[42.09px] mb-[114.94px] w-[653.25px] max-sm:mt-[60px] max-sm:w-[300px] max-sm:h-[300px] max-sm:ml-3  max-md:w-[400px] max-lg:w-[420px] max-xl:w-[653.25px] max-2xl:w-[700px]' src={image} alt="image" />
                         </div>
 
 
                         <div className='relative
   w-[200.75px] h-[88.5px] mt-[-720.28px] 
-  ml-[1100.31px] max-sm:w-[60.45px]  max-sm:h-[50px] max-sm:mt-[-390px] 
+  ml-[1100.31px] max-sm:w-[50.45px] max-sm:hidden max-sm:h-[50px] max-sm:mt-[-500px] 
       
-  sm:w-[113.0625px]  max-sm:ml-[350px] sm:ml-[450px] md:ml-[500px] 
+  sm:w-[113.0625px]  max-sm:ml-[50px] sm:ml-[450px] md:ml-[500px] 
   max-md:w-[100.675px] max-md:ml-[700px] md:mr-[-100px] max-lg:mt-[-500px]
   max-lg:w-[200.75px] max-lg:ml-[-500px] lg:ml-[850px] lg:mt-[-780px]
   max-xl:w-[150.75px] max-xl:ml-[-700px] xl:ml-[1100px] min-xl:mb[-500px]
@@ -359,9 +281,9 @@ const Hero = () => {
                     draggable={false}
                     touchReleaseOnEdges={true}
                     freeMode={true}
-                    freeModeSticky={false}
-                    freeModeNoMomentumRelease={true}
-                    freeModeMomentumRatio={0.3}
+                    // freeModeSticky={false}
+                    // freeModeNoMomentumRelease={true}
+                    // freeModeMomentumRatio={0.3}
 
                 >
 
@@ -371,7 +293,7 @@ const Hero = () => {
                     <div className='h-[873px]  w-full'>
                         <SwiperSlide>
                             <div className='flex max-sm:ml-1  max-md:flex-row space-y-4 max-xl:space-x-[5px] max-md:space-y-0 max-md:space-x-[40px] mt-[190.5px] text-#2C2C2C ml-[56.14px]'>
-                                <h1 className='text-[220px] leading-none max-md:text-[100px] max-lg:text-[150px] max-sm:text-[40px] max-xl:text-[220px] max-2xl:text-[250px]'>
+                                <h1 className='text-[220px] leading-none max-md:text-[100px] max-lg:text-[100px] max-sm:text-[40px] max-xl:text-[120px] max-2xl:text-[250px]'>
                                     CONSULTING <br />AND STRATEGY
                                 </h1>
                                 <ul className='leading-loose font-grey-500'>
@@ -396,7 +318,7 @@ const Hero = () => {
 
                         <SwiperSlide>
                             <div className='flex  max-sm:ml-1 max-md:flex-row space-y-4  max-xl:space-x-[5px] max-md:space-y-0 max-md:space-x-[40px] mt-[190.5px] text-#2C2C2C ml-[56.14px]'>
-                                <h1 className='text-[220px] leading-none max-md:text-[100px] max-lg:text-[150px] max-sm:text-[40px] max-xl:text-[220px] max-2xl:text-[300px]'>
+                                <h1 className='text-[220px] leading-none max-md:text-[100px] max-lg:text-[100px] max-sm:text-[40px] max-xl:text-[120px] max-2xl:text-[300px]'>
                                     USER<br />EXPERIENCE
                                 </h1>
                                 <ul className='leading-loose  font-grey-500'>
@@ -425,7 +347,7 @@ const Hero = () => {
 
                         <SwiperSlide>
                             <div className='flex  max-sm:ml-1 max-md:flex-row space-y-4 max-xl:space-x-[5px] max-md:space-y-0 max-md:space-x-[40px] mt-[190.5px] text-#2C2C2C ml-[56.14px]'>
-                                <h1 className='text-[220px] leading-none max-md:text-[100px] max-lg:text-[150px] max-sm:text-[40px] max-xl:text-[220px] max-2xl:text-[300px]'>PRODUCT<br /> DEVELOPMENT</h1>
+                                <h1 className='text-[220px] leading-none max-md:text-[100px] max-lg:text-[100px] max-sm:text-[40px] max-xl:text-[120px] max-2xl:text-[300px]'>PRODUCT<br /> DEVELOPMENT</h1>
 
                                 <ul className='leading-loose font-grey-500'>
                                     <li className='text-[16px] max-md:text-[10px] max-lg:text-[12px] max-sm:text-[6px] max-xl:text-[16px] max-2xl:text-[20px]'>WEBSITE DEVELOPMENT</li>
@@ -445,7 +367,7 @@ const Hero = () => {
 
                         <SwiperSlide>
                             <div className='flex max-sm:ml-1  max-md:flex-row space-y-4 max-xl:space-x-[50px] max-md:space-y-0 max-md:space-x-[40px] mt-[190.5px] text-#2C2C2C ml-[56.14px]'>
-                                <h1 className='text-[220px] leading-none max-md:text-[100px] max-lg:text-[150px] max-sm:text-[40px] max-xl:text-[220px] max-2xl:text-[300px]'>DIGITAL<br />MARKETING</h1>
+                                <h1 className='text-[220px] leading-none max-md:text-[100px] max-lg:text-[100px] max-sm:text-[40px] max-xl:text-[120px] max-2xl:text-[300px]'>DIGITAL<br />MARKETING</h1>
                                 <ul className='leading-loose font-grey-500'>
                                     <li className='text-[16px] max-md:text-[10px] max-lg:text-[12px] max-sm:text-[6px] max-xl:text-[16px] max-2xl:text-[20px]'>SEO</li>
                                     <li className='text-[16px] max-md:text-[10px] max-lg:text-[12px] max-sm:text-[6px] max-xl:text-[16px] max-2xl:text-[20px]'>SOCIAL MEDIA</li>
@@ -507,9 +429,9 @@ const Hero = () => {
                     draggable={true}
                     freeMode={true}
                 >
-                    <div className='h-[719px]  w-full mx-auto'>
-                        <SwiperSlide className=' ml-[42px] max-sm:ml-3  '>
-                            <img src={image4} alt="MANGO" className=' w-full h-auto max-sm:w-[300px] max-sm:h-[300px] md:w-[500px] md:h-[500px] lg:h-[653px] lg:w-[653px] ' />
+                    <div className='h-[719px]  w-full mx-auto  items-center'>
+                        <SwiperSlide className=' ml-[42px] max-sm:ml-3      '>
+                            <img src={image4} alt="MANGO" className=' w-full h-auto max-sm:w-[300px] max-sm:h-[300px] md:w-[500px] md:h-[500px] lg:h-[653px] lg:w-[653px]   flex items-center justify-center md:items-start md:justify-start ' />
                             <h3 className='mt-2 flex items-start font-semibold text-center text-base md:text-lg lg:text-xl xl:text-2xl'>MANGO</h3>
                         </SwiperSlide>
 
@@ -552,8 +474,8 @@ const Hero = () => {
 
 
 
-                <div className='relative h-[293.25px]  sm:h-[200px] md:h-[250px] lg:h-[293.25px] w-full max-w-[1440px] mx-auto'>
-                    <img src={image6} alt="image6" className=' w-full h-auto max-sm:w-[250px] max-sm:h-[250px]' />
+                <div className='relative h-[293.25px]  md:h-[250px] lg:h-[293.25px] w-full max-w-[1440px] mx-auto'>
+                    <img src={image6} alt="image6" className=' w-full h-auto ' />
                 </div>
 
 

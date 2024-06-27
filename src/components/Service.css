@@ -76,7 +76,7 @@
 }
 
 .menu-para {
-  width: 2px;
+  width: 200px;
   font-size: 21px;
   text-wrap: nowrap;
   position: relative;
@@ -114,7 +114,7 @@
 @media (min-width: 320px) and (max-width: 425px) {
   .services-section {
     display: flex;
-    flex-direction: row;
+    //flex-direction: column;
     align-items: center;
     height: 1100px;
     margin-top: -300px;
@@ -128,22 +128,39 @@
     
                                      
   }
+  .service{
+    justify-content: center;
+  }
   .menuitems {
     
-    margin-top: -110px;
+    margin-top: 20px;
     overflow-x: hidden;
     display: flex;
+    justify-content: center;
 
     flex-direction: column;
     align-items: center;
   }
   .menu-para {
     font-size: 15px;
-    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding-x: 10px ;
+    margin-left: 20px;
   }
   .service {
     margin-top: -700px;
   }
+  .menu-head {
+    display: none;
+  }
+  .menu-list {
+    margin-top: 0px;
+    opacity: 1;
+    margin-left: 20px;
+    
+  }
+  
 }
 
 
@@ -178,20 +195,25 @@
     display:flex;
     justify-content: start;
     align-items: start;
+    
   }
   .menu-para{
     //margin-bottom: 80px;
     font-size: 15px;
     margin-top: 0px;
+    padding-x: 10px ; 
     
     
     //align-items: center;
     
     //display: none;
   }
+  .menu-head {
+    display: none;
+  }
   
   .menu-list {
-    display:none;
+    opacity: 1;
   }
   
 
@@ -242,7 +264,7 @@
     font-size: 20px;
     position: absolute;
     margin-left: 600px;
-    margin-top: -350px;
+    margin-top: -50px;
     overflow-x: hiddden;
   }
   .work-para{
@@ -251,14 +273,20 @@
     margin-top: 15px;
   }
   .menu-head {
+    margin-bottom: 0px;
+    margin-left: 20px;
 
     /* overflow-x: hidden; */
   }
+  
   .menuitems{
     overflow-x: hidden;
   }
   .services-button {
     margin-left: -300px;
+  }
+  .serviceimage {
+    margin-top: 130px;
   }
 }
 
@@ -294,14 +322,29 @@
   }
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1536px) and (max-width: 2560px) {
    {
     font-size: 100px;
   }
+  .menuitems {
+    margin-top: 0px;
+    margin-left: 100px;
+    
+    
 
-  .service {
+  }
+  .menu-head {
+    margin-left: 20px;
+  }
+  .serviceimage {
+    margin-top: 80px;
+    width: 700px;
+    height: 750px;
+  }
+
+  /* .service {
     display: flex;
     justify-content: center;
     padding: 100px;
-  }
+  } */
 }
